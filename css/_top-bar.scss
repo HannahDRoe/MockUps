@@ -1,0 +1,109 @@
+.no-js .top-bar {
+    display: block;
+}
+
+.no-js .title-bar {
+    display: none;
+}
+// top bar styling
+$activeBtn: #5EBDEB;
+$topBtnBG: #333B48;
+
+// Top Bar 
+.top-bar{
+	height: 5em;
+	padding-right: 5em;
+}
+// Top bar Link color
+.title-bar,
+.top-bar, li{
+	background-color: $topBtnBG;
+}
+//Top Bar Left
+#logo{
+	height: 2em;
+	width: 3em;
+	margin: .5em .25em .5em 1em;
+}
+//Top Button stylings to override foundation stylings
+.medium.button{
+	background-color: $topBtnBG;
+	margin-top: 1em;
+	margin-right: .2em;
+	outline: none;
+	border-radius: .25em;
+}
+// active button styling
+.medium.button.active,
+.button:hover{
+	background-color: $activeBtn;
+	border-radius: .25em;
+}
+
+// Medium Screen
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+	.title-bar{
+		height: 3em;
+	}
+	#logo{
+		display: none;
+	}
+	.top-bar{
+		width: 20em;
+	}
+	#top-menu{
+		padding-right: 0;
+	}
+	.menu li {
+		display: block !important;
+		width: 20em;
+		float: left;
+	}
+	.medium.button{
+		margin-top: 0;
+		margin-right: 0;
+		padding-top: 1.5em;
+		padding-bottom: 1.5em
+
+	}
+	
+	// button styling
+	.medium.button,
+	.medium.button.active,
+	.button:hover{
+		border-radius: 0;
+	}
+}
+
+// Small Screen
+@media screen and (max-width: 39.9375em)  {
+	
+	.title-bar{
+		height: 3em;
+	}
+	#logo{
+		display: none;
+	}
+	#top-menu{
+		padding-right: 2em;
+	}
+	.is-drilldown{
+		background-color: $topBtnBG;
+		margin-left: -1em;
+	}
+	.menu.drilldown{
+		width: 20em;
+	}
+	.medium.button{
+		margin-top: 0;
+		margin-right: 0;
+		padding-top: 2.5em;
+		padding-bottom: 2.5em;
+	}
+	// button styling
+	.medium.button,
+	.medium.button.active,
+	.button:hover{
+		border-radius: 0;
+	}
+}
