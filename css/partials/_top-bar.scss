@@ -44,15 +44,23 @@ $topBtnBG: #333B48;
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
 	.title-bar{
 		height: 3em;
+
 	}
 	#logo{
 		display: none;
 	}
+
 	.top-bar{
 		width: 20em;
+		height: 0;
+	}
+	.top-bar-right{
+
 	}
 	#top-menu{
-		padding-right: 0;
+		padding: 0;
+		height: 0;
+		
 	}
 	.menu li {
 		display: block !important;
