@@ -1,0 +1,61 @@
+$blue-accent: #1DA1E1;
+// About cotainer
+#about{
+	text-align: center;
+	margin: 0 auto;
+	height: 45em;
+}
+//About Header
+#about-header{
+	@include blue-header(8em)
+}
+
+//http://www.flaticon.com/packs/web-design-set <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+// About Row
+#about-row{
+	height: 15em;
+	width: 100%;
+	margin: 5em auto;
+}
+// Callouts/ Individual squares
+.callout{
+	height: 18em;
+	width: 16em;
+}
+// Image containers for Grey circles
+.img-container{
+	width: 10em;
+  	height: 10em;
+  	background-color: #ddd;
+  	border-radius: 6em;
+  	margin: 0 auto;
+
+}
+// Icons position and size
+.features-row{
+	position: relative;
+	width: 6em;
+  	height: 6em;
+  	margin: 2em auto 0 auto;
+}
+// Descriptions
+.about-p{
+	margin-top: 4em;
+}
+// Special styles for HTML logo
+#html{
+	height: 7em;
+	width: 7em;
+	margin-top: 1em;
+}
+
+// Recent Projects section
+#recent-projects{
+	height: 33em;
+	width: 100%;
+	background-color: $blue-accent;
+}
+#recent-header{
+	@include white-header(12em);
+	 @include border-accent(#fff);
+}

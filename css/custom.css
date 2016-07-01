@@ -1,17 +1,47 @@
-/* line 4, custom.scss */
+/* line 5, custom.scss */
 html {
   height: 100%;
   min-height: 100%;
   outline: none;
 }
 
-/* line 9, custom.scss */
+/* line 10, custom.scss */
 body {
   height: inherit;
   width: inherit;
   margin: 0;
   padding: 0;
   outline: none;
+}
+
+/* line 40, custom.scss */
+.lined-header span {
+  display: inline-block;
+  position: relative;
+}
+
+/* line 45, custom.scss */
+.lined-header span:before,
+.lined-header span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  margin-top: .5em;
+  border-bottom: 3px solid #1da1e1;
+  top: 0;
+  width: 1.5em;
+}
+
+/* line 55, custom.scss */
+.lined-header span:before {
+  right: 100%;
+  margin-right: 1em;
+}
+
+/* line 59, custom.scss */
+.lined-header span:after {
+  left: 100%;
+  margin-left: 1em;
 }
 
 /* line 1, partials/_top-bar.scss */
@@ -35,7 +65,7 @@ body {
 }
 
 /* line 22, partials/_top-bar.scss */
-.menu {
+.menu, .title-bar {
   background-color: #333b48 !important;
 }
 
@@ -245,24 +275,79 @@ div.slick-slide {
   background-size: cover;
 }
 
-/* line 2, partials/_about.scss */
+/* line 3, partials/_about-recent.scss */
 #about {
   text-align: center;
   margin: 0 auto;
   height: 45em;
 }
 
-/* line 7, partials/_about.scss */
-#aboutHeader {
+/* line 9, partials/_about-recent.scss */
+#about-header {
   margin-top: 3em;
   width: 8em;
-  border: 2px solid #1DA1E1;
+  border: 2px solid #1da1e1;
   border-radius: .15em;
-  color: #1DA1E1;
+  color: #1da1e1;
   letter-spacing: .2em;
 }
 
-/* line 15, partials/_about.scss */
+/* line 15, partials/_about-recent.scss */
+#about-row {
+  height: 15em;
+  width: 100%;
+  margin: 5em auto;
+}
+
+/* line 21, partials/_about-recent.scss */
+.callout {
+  height: 18em;
+  width: 16em;
+}
+
+/* line 26, partials/_about-recent.scss */
+.img-container {
+  width: 10em;
+  height: 10em;
+  background-color: #ddd;
+  border-radius: 6em;
+  margin: 0 auto;
+}
+
+/* line 35, partials/_about-recent.scss */
 .features-row {
-  height: 5em;
+  position: relative;
+  width: 6em;
+  height: 6em;
+  margin: 2em auto 0 auto;
+}
+
+/* line 42, partials/_about-recent.scss */
+.about-p {
+  margin-top: 4em;
+}
+
+/* line 46, partials/_about-recent.scss */
+#html {
+  height: 7em;
+  width: 7em;
+  margin-top: 1em;
+}
+
+/* line 53, partials/_about-recent.scss */
+#recent-projects {
+  height: 33em;
+  width: 100%;
+  background-color: #1da1e1;
+}
+
+/* line 58, partials/_about-recent.scss */
+#recent-header {
+  margin-top: 3em;
+  width: 12em;
+  border: 2px solid #fff;
+  border-radius: .15em;
+  color: #fff;
+  letter-spacing: .2em;
+  border-color: white;
 }
