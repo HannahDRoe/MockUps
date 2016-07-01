@@ -1,34 +1,79 @@
-.top-slider{
-	width: 95% ;
-	height: 100% ;
-	margin: auto;
-}
 
+// Slider container
 #content{
 	margin: 0;
-    padding: 2em;
+    padding: 0em;
     width: 100%;
-    height: 33em;
-    background-color: #FF725B;
+    height: 45em;
+    background-color: #333B48;
 }
+
 div.slick-slide{
 	height: 27em;
 	width: 100%;
 	padding-top: 9em;
 	text-align: center;
 	margin: 0;
+	outline: none;
 }
-.slick-active{
-	width: 100%;
-	height: 100%;
+
+// Next Button 
+.slick-next, .slick-next:focus, .slick-next:hover{
+	position: absolute;
+    right: 10px;
+    height: 40px;
+    width: 40px;
 }
+//Previous Button 
+.slick-prev, .slick-prev:focus, .slick-prev:hover{
+	position: absolute;
+    left: 10px;
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+}
+
+// Slide Disabled Buttons
+.slick-disabled{
+	opacity: 0.5;
+}
+// Slider dots Position
 .slick-dots{
 	position: relative;
+	float: bottom;
+	bottom: 2.5em;
 }
-.slick-dots li button {
- 	background-color: #FF725B;
-}
+// Dot color
 .slick-dots li button:before, 
 .slick-dots li.slick-active button:before{
 	color: #FFFFFF;
 }
+// Slide size
+.slides{
+	height: 45em !important;
+	padding: 0;
+}
+#slide1{
+	background: url('img/mount1.jpeg')no-repeat center;
+	background-size: cover;
+}
+#slide1-contents{
+	padding-top: 10em;
+	color: #fff;
+}
+.slide1-btn{
+	background-color: $topBtnBG;
+}
+.slide1-btn:hover, .slide1-btn:active{
+	outline: none;
+	border-radius: 0;
+}
+#slide2{
+	background: url('img/mount2.jpg')no-repeat center;
+	background-size: cover;
+}
+#slide3{
+	background: url('img/mount3.jpg') no-repeat center;
+	background-size: cover;
+}
+//Icons made by Robin Kylander from Flaticon is licensed by http://creativecommons.org

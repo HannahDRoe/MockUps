@@ -1,79 +1,99 @@
+/* line 4, custom.scss */
+html {
+  height: 100%;
+  min-height: 100%;
+  outline: none;
+}
+
+/* line 9, custom.scss */
+body {
+  height: inherit;
+  width: inherit;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
 /* line 1, partials/_top-bar.scss */
 .no-js .top-bar {
   display: block;
 }
 
-/* line 5, partials/_top-bar.scss */
+/* line 4, partials/_top-bar.scss */
 .no-js .title-bar {
   display: none;
 }
 
-/* line 13, partials/_top-bar.scss */
+/* line 12, partials/_top-bar.scss */
 .top-bar {
-  height: 5em;
+  height: 6em;
   padding-right: 5em;
-}
-
-/* line 19, partials/_top-bar.scss */
-.title-bar,
-.top-bar, li {
   background-color: #333b48;
+  position: absolute;
+  z-index: 10000;
+  width: 100%;
 }
 
-/* line 23, partials/_top-bar.scss */
+/* line 22, partials/_top-bar.scss */
+.menu {
+  background-color: #333b48 !important;
+}
+
+/* line 26, partials/_top-bar.scss */
 #logo {
   height: 2em;
   width: 3em;
   margin: .5em .25em .5em 1em;
 }
 
-/* line 29, partials/_top-bar.scss */
-.medium.button {
+/* line 32, partials/_top-bar.scss */
+.menu-btn {
   background-color: #333b48;
   margin-top: 1em;
   margin-right: .2em;
   outline: none;
   border-radius: .25em;
+  z-index: 999;
 }
 
-/* line 38, partials/_top-bar.scss */
-.medium.button.active,
+/* line 43, partials/_top-bar.scss */
+.menu-btn.active,
 .button:hover {
   background-color: #5ebdeb;
   border-radius: .25em;
 }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-  /* line 45, partials/_top-bar.scss */
+  /* line 50, partials/_top-bar.scss */
   .title-bar {
     height: 3em;
   }
 
-  /* line 49, partials/_top-bar.scss */
+  /* line 54, partials/_top-bar.scss */
   #logo {
     display: none;
   }
 
-  /* line 53, partials/_top-bar.scss */
+  /* line 58, partials/_top-bar.scss */
   .top-bar {
     width: 20em;
     height: 0;
   }
 
-  /* line 60, partials/_top-bar.scss */
+  /* line 63, partials/_top-bar.scss */
   #top-menu {
     padding: 0;
     height: 0;
   }
 
-  /* line 65, partials/_top-bar.scss */
+  /* line 68, partials/_top-bar.scss */
   .menu li {
     display: block !important;
     width: 20em;
     float: left;
   }
 
-  /* line 70, partials/_top-bar.scss */
+  /* line 73, partials/_top-bar.scss */
   .medium.button {
     margin-top: 0;
     margin-right: 0;
@@ -81,7 +101,7 @@
     padding-bottom: 1.5em;
   }
 
-  /* line 81, partials/_top-bar.scss */
+  /* line 85, partials/_top-bar.scss */
   .medium.button,
   .medium.button.active,
   .button:hover {
@@ -89,33 +109,33 @@
   }
 }
 @media screen and (max-width: 39.9375em) {
-  /* line 89, partials/_top-bar.scss */
+  /* line 94, partials/_top-bar.scss */
   .title-bar {
     height: 3em;
   }
 
-  /* line 92, partials/_top-bar.scss */
+  /* line 97, partials/_top-bar.scss */
   #logo {
     display: none;
   }
 
-  /* line 95, partials/_top-bar.scss */
+  /* line 100, partials/_top-bar.scss */
   #top-menu {
     padding-right: 2em;
   }
 
-  /* line 98, partials/_top-bar.scss */
+  /* line 104, partials/_top-bar.scss */
   .is-drilldown {
     background-color: #333b48;
     margin-left: -1em;
   }
 
-  /* line 102, partials/_top-bar.scss */
+  /* line 108, partials/_top-bar.scss */
   .menu.drilldown {
     width: 20em;
   }
 
-  /* line 105, partials/_top-bar.scss */
+  /* line 111, partials/_top-bar.scss */
   .medium.button {
     margin-top: 0;
     margin-right: 0;
@@ -123,56 +143,126 @@
     padding-bottom: 2.5em;
   }
 
-  /* line 114, partials/_top-bar.scss */
+  /* line 120, partials/_top-bar.scss */
   .medium.button,
   .medium.button.active,
   .button:hover {
     border-radius: 0;
   }
 }
-/* line 1, partials/_slider.scss */
-.top-slider {
-  width: 95%;
-  height: 100%;
-  margin: auto;
-}
-
-/* line 7, partials/_slider.scss */
+/* line 3, partials/_slider.scss */
 #content {
   margin: 0;
-  padding: 2em;
+  padding: 0em;
   width: 100%;
-  height: 33em;
-  background-color: #FF725B;
+  height: 45em;
+  background-color: #333B48;
 }
 
-/* line 14, partials/_slider.scss */
+/* line 11, partials/_slider.scss */
 div.slick-slide {
   height: 27em;
   width: 100%;
   padding-top: 9em;
   text-align: center;
   margin: 0;
+  outline: none;
 }
 
 /* line 21, partials/_slider.scss */
-.slick-active {
-  width: 100%;
-  height: 100%;
-}
-
-/* line 25, partials/_slider.scss */
-.slick-dots {
-  position: relative;
+.slick-next, .slick-next:focus, .slick-next:hover {
+  position: absolute;
+  right: 10px;
+  height: 40px;
+  width: 40px;
 }
 
 /* line 28, partials/_slider.scss */
-.slick-dots li button {
-  background-color: #FF725B;
+.slick-prev, .slick-prev:focus, .slick-prev:hover {
+  position: absolute;
+  left: 10px;
+  height: 40px;
+  width: 40px;
+  z-index: 1;
 }
 
-/* line 32, partials/_slider.scss */
+/* line 37, partials/_slider.scss */
+.slick-disabled {
+  opacity: 0.5;
+}
+
+/* line 41, partials/_slider.scss */
+.slick-dots {
+  position: relative;
+  float: bottom;
+  bottom: 2.5em;
+}
+
+/* line 48, partials/_slider.scss */
 .slick-dots li button:before,
 .slick-dots li.slick-active button:before {
   color: #FFFFFF;
+}
+
+/* line 52, partials/_slider.scss */
+.slides {
+  height: 45em !important;
+  padding: 0;
+}
+
+/* line 56, partials/_slider.scss */
+#slide1 {
+  background: url("img/mount1.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+/* line 60, partials/_slider.scss */
+#slide1-contents {
+  padding-top: 10em;
+  color: #fff;
+}
+
+/* line 64, partials/_slider.scss */
+.slide1-btn {
+  background-color: #333b48;
+}
+
+/* line 67, partials/_slider.scss */
+.slide1-btn:hover, .slide1-btn:active {
+  outline: none;
+  border-radius: 0;
+}
+
+/* line 71, partials/_slider.scss */
+#slide2 {
+  background: url("img/mount2.jpg") no-repeat center;
+  background-size: cover;
+}
+
+/* line 75, partials/_slider.scss */
+#slide3 {
+  background: url("img/mount3.jpg") no-repeat center;
+  background-size: cover;
+}
+
+/* line 2, partials/_about.scss */
+#about {
+  text-align: center;
+  margin: 0 auto;
+  height: 45em;
+}
+
+/* line 7, partials/_about.scss */
+#aboutHeader {
+  margin-top: 3em;
+  width: 8em;
+  border: 2px solid #1DA1E1;
+  border-radius: .15em;
+  color: #1DA1E1;
+  letter-spacing: .2em;
+}
+
+/* line 15, partials/_about.scss */
+.features-row {
+  height: 5em;
 }
