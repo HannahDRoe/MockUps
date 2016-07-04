@@ -1,28 +1,88 @@
 $blue-accent: #1DA1E1;
-// About cotainer
+@mixin blue-header($width){
+		margin-top: 3em;
+		width: $width;
+		border: 2px solid $blue-accent;
+		border-radius: .15em;
+		color: $blue-accent;
+		letter-spacing: .2em;
+}
+@mixin white-header($width){
+		margin-top: 3em;
+		width: $width;
+		border: 2px solid #fff;
+		border-radius: .15em;
+		color: #fff;
+		letter-spacing: .2em;
+}
+
+
+@mixin span-settings-blue{
+		content: "";
+		position: absolute;
+	  	height: 5px;
+	  	margin-top: .5em;
+	  	border-bottom: 3px solid $blue-accent;
+	  	top: 0;
+	  	width: 1.5em;
+}
+@mixin span-settings-white{
+		content: "";
+		position: absolute;
+	  	height: 5px;
+	  	margin-top: .5em;
+	  	border-bottom: 3px solid #fff;
+	  	top: 0;
+	  	width: 1.5em;
+}
+/*//Header Span Lines*/
+.lined-header span {
+  display: inline-block;
+  position: relative;  
+}
+/*.lined-header span:before,
+.lined-header span:after {
+	
+
+}*/
+.lined-header span:before {
+	right: 100%;
+	margin-right: 1em;
+}
+.lined-header span:after {
+ 	left: 100%;
+ 	margin-left: 1em;
+ }
+/*// About cotainer*/
 #about{
 	text-align: center;
 	margin: 0 auto;
 	height: 45em;
 }
-//About Header
+/*//About Header*/
 #about-header{
-	@include blue-header(8em)
+	@include blue-header(8em);
+}
+#about-header.lined-header span:before,
+	.lined-header span:after {
+	@include span-settings-blue;
+
 }
 
-//http://www.flaticon.com/packs/web-design-set <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-// About Row
+
+/*//http://www.flaticon.com/packs/web-design-set <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+// About Row*/
 #about-row{
 	height: 15em;
 	width: 100%;
 	margin: 5em auto;
 }
-// Callouts/ Individual squares
+/*// Callouts/ Individual squares*/
 .callout{
 	height: 18em;
 	width: 16em;
 }
-// Image containers for Grey circles
+/*// Image containers for Grey circles*/
 .img-container{
 	width: 10em;
   	height: 10em;
@@ -31,25 +91,25 @@ $blue-accent: #1DA1E1;
   	margin: 0 auto;
 
 }
-// Icons position and size
+/*// Icons position and size*/
 .features-row{
 	position: relative;
 	width: 6em;
   	height: 6em;
   	margin: 2em auto 0 auto;
 }
-// Descriptions
+/*// Descriptions*/
 .about-p{
 	margin-top: 4em;
 }
-// Special styles for HTML logo
+/*// Special styles for HTML logo*/
 #html{
 	height: 7em;
 	width: 7em;
 	margin-top: 1em;
 }
 
-// Recent Projects section
+/*// Recent Projects section*/
 #recent-projects{
 	height: 33em;
 	width: 100%;
@@ -57,5 +117,12 @@ $blue-accent: #1DA1E1;
 }
 #recent-header{
 	@include white-header(12em);
-	 @include border-accent(#fff);
 }
+
+/*/* Recent header span lines**/
+#recent-header.lined-header span:before,
+#recent-header.lined-header span:after {
+ 	@include span-settings-white;
+}
+
+	
