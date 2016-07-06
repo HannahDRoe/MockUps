@@ -10,9 +10,12 @@ body{
     margin: 0;
     padding: 0;
     outline: none;
+	font-family: 'Open Sans', sans-serif;
+	color: #61666D;
 }
 
 @import "compass";
 @import 'partials/_top-bar';
 @import 'partials/_slider.scss';
-@import 'partials/_about-recent.scss'
+@import 'partials/_about-recent.scss';
+@import 'partials/_teams.scss';
