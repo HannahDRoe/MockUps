@@ -1,7 +1,12 @@
 $(document).foundation();
-$('.button').click(function(event) {
+$('.menu-btn').click(function(event) {
 	event.preventDefault();
-	$('.button').removeClass('active');
+	$('.menu-btn').removeClass('active');
 	$(this).addClass('active');
+});
+$('.work-btns').click(function(event) {
+	event.preventDefault();
+	$('.work-btns').removeClass('selected');
+	$(this).addClass('selected');
 });
 

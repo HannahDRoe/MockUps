@@ -32,12 +32,14 @@
 	margin-right: .2em;
 	outline: none;
 	border-radius: .25em;
-
+}
+@mixin active-button{
+	background-color: #5EBDEB;
 }
 
 #see-our-work{
 	background-color:#657688; 
-	height: 45em;
+	height: 55em;
 	margin-top: 2em;
 	padding-top: 1em;
 }
@@ -65,24 +67,45 @@
 	font-weight: 600;
 	padding: .85em;
 }
+.work-btns.selected{
+	@include active-button;
+	color: #fff;
+
+}
+#work-img-div{
+	margin-top: 2em;
+
+}
+.work-img{
+	display: inline-block;
+	width: 20em ;
+	height: 12.5em;
+	margin-bottom: 1em;
+	object-fit: cover;
+	
+}
+	
+
 // Medium Screen
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-	button.work-btns.medium.button{
+	.work-btns.medium.button{
 		height: 3em !important;
-		
-		padding: 0;
 		border-radius: .25em;
+		padding-top: .95em;
 	}
 }
 
 // Small Screen
 @media screen and (max-width: 39.9375em)  {
 
-	button.work-btns.medium.button{
-		height: 3em !important;
-		
-		padding: 0;
+	.work-btns.medium.button{
+		height: 3em !important; 
+		padding-top: 0em;
+		padding-bottom: 0;
 		border-radius: .25em;
 
+	}
+	#see-our-work{
+		height: 115%;
 	}
 }

@@ -13,6 +13,7 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	color: #61666D;
 }
+
 //Header Span Lines
 .lined-header span {
   display: inline-block;
@@ -27,7 +28,20 @@ body{
  	left: 100%;
  	margin-left: 1em;
  }
- 
+ @mixin header-p{
+ 	font-size: .85em;
+	margin-top: 1.5em;
+	margin-bottom: 2em;
+	text-align: center;
+ }
+ // Header Paragraphs
+.grey-header-p{
+	@include header-p;
+}
+.white-header-p{
+	@include header-p;
+	color: #fff;
+}
  
 @import "compass";
 @import 'partials/_top-bar';
@@ -35,3 +49,4 @@ body{
 @import 'partials/_about-recent.scss';
 @import 'partials/_teams.scss';
 @import 'partials/_see-our-work.scss';
+@import 'partials/_services.scss';

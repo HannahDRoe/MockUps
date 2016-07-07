@@ -5,7 +5,6 @@
     display: none;
 }
 // top bar variables
-$activeBtn: #5EBDEB;
 $topBtnBG: #333B48;
 
 @mixin button-mixin{
@@ -14,6 +13,10 @@ $topBtnBG: #333B48;
 	outline: none;
 	border-radius: .25em;
 	z-index: 999;
+}
+@mixin active-button{
+	background-color: #5EBDEB;
+
 }
 // Top Bar 
 .top-bar{
@@ -44,8 +47,7 @@ $topBtnBG: #333B48;
 // active button styling
 .menu-btn.active,
 .button:hover{
-	background-color: $activeBtn;
-	border-radius: .25em;
+	@include active-button;
 }
 
 // Medium Screen

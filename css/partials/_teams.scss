@@ -19,13 +19,6 @@ $grey-accent: #6d6d6e;
       top: 0;
       width: 1.5em;
 }
-// Header Paragraphs
-@mixin header-p{
-  font-size: .85em;
-  margin-top: 1.5em;
-  margin-bottom: 2em;
-  text-align: center;
-}
 
 // Teams container
 #teams{
@@ -35,9 +28,7 @@ $grey-accent: #6d6d6e;
 #team-header{
   @include blue-header(5.25em);
 }
-#team-header-p{
-  @include header-p;
-}
+
 //Team Header Span
 #team-header.lined-header span:before,
 #team-header.lined-header span:after {
@@ -112,7 +103,7 @@ div.team-img-div.slick-list{
   border-radius: 9em;
   height:18em;
   width: 18em;
-  overflow: hidden;
+  object-fit: cover;
 
 }
 
