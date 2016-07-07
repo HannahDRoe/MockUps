@@ -8,6 +8,13 @@
 $activeBtn: #5EBDEB;
 $topBtnBG: #333B48;
 
+@mixin button-mixin{
+	margin-top: 1em;
+	margin-right: .2em;
+	outline: none;
+	border-radius: .25em;
+	z-index: 999;
+}
 // Top Bar 
 .top-bar{
 	height: 6em;
@@ -31,11 +38,7 @@ $topBtnBG: #333B48;
 //Top Button stylings to override foundation stylings
 .menu-btn{
 	background-color: $topBtnBG;
-	margin-top: 1em;
-	margin-right: .2em;
-	outline: none;
-	border-radius: .25em;
-	z-index: 999;
+	@include button-mixin;
 	
 }
 // active button styling

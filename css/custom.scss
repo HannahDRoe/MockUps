@@ -13,9 +13,25 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	color: #61666D;
 }
+//Header Span Lines
+.lined-header span {
+  display: inline-block;
+  position: relative;  
+}
 
+.lined-header span:before {
+	right: 100%;
+	margin-right: 1em;
+}
+.lined-header span:after {
+ 	left: 100%;
+ 	margin-left: 1em;
+ }
+ 
+ 
 @import "compass";
 @import 'partials/_top-bar';
 @import 'partials/_slider.scss';
 @import 'partials/_about-recent.scss';
 @import 'partials/_teams.scss';
+@import 'partials/_see-our-work.scss';

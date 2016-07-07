@@ -1,0 +1,88 @@
+// White Span Lines
+@mixin span-settings-white{
+		content: "";
+		position: absolute;
+	  	height: 5px;
+	  	margin-top: .5em;
+	  	border-bottom: 3px solid #fff;
+	  	top: 0;
+	  	width: 1.5em;
+}
+// White Header
+@mixin white-header($width){
+		margin-top: 2em;
+		width: $width;
+		border: 2px solid #fff;
+		border-radius: .15em;
+		color: #fff;
+		letter-spacing: .2em;
+		font-weight: 600;
+		text-align: center;
+}
+// Header Paragraphs
+@mixin header-p{
+	font-size: .85em;
+	margin-top: 1.5em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+// Buttons
+@mixin button-mixin{
+	margin-top: 1em;
+	margin-right: .2em;
+	outline: none;
+	border-radius: .25em;
+
+}
+
+#see-our-work{
+	background-color:#657688; 
+	height: 45em;
+	margin-top: 2em;
+	padding-top: 1em;
+}
+
+#work-header{
+	@include white-header(12em);
+}
+#work-header-p{
+	@include header-p;
+	color: #fff;
+}
+
+//Team Header Span
+#work-header.lined-header span:before,
+ #work-header.lined-header span:after {
+    @include span-settings-white;
+}
+#filter-btns{
+	text-align: center;
+}
+.work-btns{
+	@include button-mixin;
+	background-color: #eee;
+	color: #000;
+	font-weight: 600;
+	padding: .85em;
+}
+// Medium Screen
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+	button.work-btns.medium.button{
+		height: 3em !important;
+		
+		padding: 0;
+		border-radius: .25em;
+	}
+}
+
+// Small Screen
+@media screen and (max-width: 39.9375em)  {
+
+	button.work-btns.medium.button{
+		height: 3em !important;
+		
+		padding: 0;
+		border-radius: .25em;
+
+	}
+}

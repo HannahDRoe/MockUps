@@ -1,4 +1,9 @@
-
+@mixin header-p-white{
+	font-size: .85em;
+	margin-top: 1.5em;
+	margin-bottom: 2em;
+	color: #fff;
+}
 // Slider container
 #content{
 	margin: 0;
@@ -9,7 +14,7 @@
 }
 
 div.slick-slide{
-	height: 27em;
+	height: 25em;
 	width: 100%;
 	padding-top: 9em;
 	text-align: center;
@@ -61,6 +66,9 @@ div.slick-slide{
 	padding-top: 10em;
 	color: #fff;
 }
+.header-p-white{
+	@include header-p-white;
+}
 .slide1-btn{
 	background-color: $topBtnBG;
 }
@@ -82,7 +90,7 @@ button.slide1-btn.medium.button{
 	background: url('img/mount3.jpg') no-repeat center;
 	background-size: cover;
 }
-//Icons made by Robin Kylander from Flaticon is licensed by http://creativecommons.org
+//Icons made by  from Flaticon is licensed by http://creativecommons.org
 
 // Medium Screen
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
