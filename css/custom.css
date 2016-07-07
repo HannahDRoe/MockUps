@@ -248,7 +248,7 @@ div.slick-slide {
 
 /* line 56, partials/_slider.scss */
 #slide1 {
-  background: url("img/mount1.jpeg") no-repeat center;
+  background: url("img/top-slides/mount1.jpeg") no-repeat center;
   background-size: cover;
 }
 
@@ -279,13 +279,13 @@ button.slide1-btn.medium.button {
 
 /* line 78, partials/_slider.scss */
 #slide2 {
-  background: url("img/mount2.jpg") no-repeat center;
+  background: url("img/top-slides/mount2.jpg") no-repeat center;
   background-size: cover;
 }
 
 /* line 82, partials/_slider.scss */
 #slide3 {
-  background: url("img/mount3.jpg") no-repeat center;
+  background: url("img/top-slides/mount3.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -766,15 +766,15 @@ div.team-img-div.slick-list {
 
   /* line 108, partials/_see-our-work.scss */
   #see-our-work {
-    height: 115%;
+    height: 75em;
   }
 }
-/* line 29, partials/_services.scss */
+/* line 37, partials/_services.scss */
 #our-services {
-  height: 50em;
+  height: 40em;
 }
 
-/* line 33, partials/_services.scss */
+/* line 41, partials/_services.scss */
 #services-header {
   margin-top: 2em;
   width: 11em;
@@ -786,7 +786,7 @@ div.team-img-div.slick-list {
   text-align: center;
 }
 
-/* line 38, partials/_services.scss */
+/* line 46, partials/_services.scss */
 #services-header.lined-header span:before,
 #services-header.lined-header span:after {
   content: "";
@@ -798,13 +798,131 @@ div.team-img-div.slick-list {
   width: 1.5em;
 }
 
-/* line 41, partials/_services.scss */
+/* line 50, partials/_services.scss */
 .service-titles {
   font-size: 1.1em;
   font-weight: 600;
+  margin-bottom: 0;
 }
 
-/* line 46, partials/_services.scss */
+/* line 56, partials/_services.scss */
 .service-descp {
-  font-size: .85em;
+  display: block;
+  font-size: .7em;
+  min-width: 20em;
+  height: 6em;
+}
+
+/* line 63, partials/_services.scss */
+#service-blocks {
+  width: 45em;
+  float: right;
+  margin-top: 5em;
+}
+
+/* line 69, partials/_services.scss */
+#iphone-side {
+  float: left;
+  margin-left: 2em;
+}
+
+/* line 73, partials/_services.scss */
+#iphone-img {
+  width: 20em;
+}
+
+/* line 77, partials/_services.scss */
+#trends {
+  position: static;
+  float: left;
+  margin: .5em .5em 3em .5em;
+  height: 4em;
+  width: 4em;
+}
+
+/* line 81, partials/_services.scss */
+#responsive {
+  position: static;
+  float: left;
+  margin: .5em .5em 3em .5em;
+  height: 4em;
+  width: 4em;
+}
+
+/* line 85, partials/_services.scss */
+#ez-customize {
+  position: static;
+  float: left;
+  margin: .5em .5em 3em .5em;
+  height: 4em;
+  width: 4em;
+}
+
+/* line 89, partials/_services.scss */
+#multi-layouts {
+  position: static;
+  float: left;
+  margin: .5em .5em 3em .5em;
+  height: 4em;
+  width: 4em;
+}
+
+/* line 93, partials/_services.scss */
+#retina {
+  position: static;
+  float: left;
+  margin: .5em .5em 3em .5em;
+  height: 4em;
+  width: 4em;
+}
+
+/* line 97, partials/_services.scss */
+#support {
+  position: static;
+  float: left;
+  margin: .5em .5em 3em .5em;
+  height: 4em;
+  width: 4em;
+}
+
+@media screen and (max-width: 63.9375em) {
+  /* line 103, partials/_services.scss */
+  #service-blocks {
+    width: 100%;
+    margin: 4em auto 0 auto;
+  }
+
+  /* line 107, partials/_services.scss */
+  #iphone-img {
+    display: none;
+  }
+}
+@media screen and (max-width: 39.9375em) {
+  /* line 114, partials/_services.scss */
+  #our-services {
+    margin-top: 0;
+  }
+
+  /* line 117, partials/_services.scss */
+  #service-container {
+    width: 100%;
+  }
+
+  /* line 121, partials/_services.scss */
+  #service-blocks {
+    width: 100%;
+    float: right;
+    margin-top: 1em;
+  }
+
+  /* line 126, partials/_services.scss */
+  #iphone-img {
+    display: none;
+  }
+
+  /* line 129, partials/_services.scss */
+  .service-descp {
+    min-width: 0;
+    height: 4em;
+  }
 }

@@ -6,8 +6,8 @@
           	mobileFirst: true,
           	infinite: false,
           	draggable: false,
-          	prevArrow:"<img class='slick-prev' src='css/img/whiteArrowPrev.svg'>",
-      		  nextArrow:"<img class='slick-next' src='css/img/whiteArrowNext.svg'>",
+          	prevArrow:"<img class='slick-prev' src='css/img/slider-arrows/whiteArrowPrev.svg'>",
+      		  nextArrow:"<img class='slick-next' src='css/img/slider-arrows/whiteArrowNext.svg'>",
 	   		responsive: [{
 	   			breakpoint:1024,
 	   			settings: {
@@ -25,8 +25,8 @@
       			arrows: true,
             slidesToShow: 4,
             draggable: false,
-            prevArrow:"<img class='slick-prev' src='css/img/greyArrowPrev.svg'>",
-            nextArrow:"<img class='slick-next' src='css/img/greyArrowNext.svg'>",
+            prevArrow:"<img class='slick-prev' src='css/img/slider-arrows/greyArrowPrev.svg'>",
+            nextArrow:"<img class='slick-next' src='css/img/slider-arrows/greyArrowNext.svg'>",
             responsive: [
               {
                 breakpoint: 1000,
