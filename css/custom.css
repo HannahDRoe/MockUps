@@ -305,14 +305,13 @@ button.slide1-btn.medium.button {
     border-radius: .25em;
   }
 }
-/* line 49, partials/_about-recent.scss */
+/* line 48, partials/_about-recent.scss */
 #about {
   text-align: center;
-  margin: 0 auto;
-  height: 35em;
+  overflow: hidden;
 }
 
-/* line 55, partials/_about-recent.scss */
+/* line 53, partials/_about-recent.scss */
 #about-header {
   margin-top: 2em;
   width: 8em;
@@ -324,7 +323,7 @@ button.slide1-btn.medium.button {
   text-align: center;
 }
 
-/* line 60, partials/_about-recent.scss */
+/* line 58, partials/_about-recent.scss */
 #about-header.lined-header span:before,
 #about-header.lined-header span:after {
   content: "";
@@ -336,21 +335,27 @@ button.slide1-btn.medium.button {
   width: 1.5em;
 }
 
-/* line 67, partials/_about-recent.scss */
-#about-row {
-  height: 15em;
+/* line 65, partials/_about-recent.scss */
+#about-container {
   width: 100%;
+}
+
+/* line 69, partials/_about-recent.scss */
+#about-row {
+  overflow: hidden;
+  width: 95%;
   margin: 2em auto;
 }
 
-/* line 73, partials/_about-recent.scss */
-.callout {
-  height: 18em;
-  width: 15em;
+/* line 74, partials/_about-recent.scss */
+.about-squares {
+  text-align: center;
+  border: .15em solid #E1E1E1;
+  margin: 1em;
 }
 
-/* line 79, partials/_about-recent.scss */
-.img-container {
+/* line 81, partials/_about-recent.scss */
+.about-img-container {
   width: 10em;
   height: 10em;
   background-color: #ddd;
@@ -358,109 +363,36 @@ button.slide1-btn.medium.button {
   margin: 0 auto;
 }
 
-/* line 88, partials/_about-recent.scss */
-.features-row {
-  position: relative;
+/* line 91, partials/_about-recent.scss */
+.about-img {
   width: 6em;
   height: 6em;
   margin: 2em auto 0 auto;
 }
 
-/* line 95, partials/_about-recent.scss */
-.callout-p {
-  margin-top: 2em;
-  margin-left: -1em;
-  width: 12em;
-  font-size: 1.1em;
+/* line 97, partials/_about-recent.scss */
+.about-p {
   color: #4D585C;
   font-size: 1.2em;
 }
 
-/* line 106, partials/_about-recent.scss */
+/* line 102, partials/_about-recent.scss */
 #html {
   height: 8em;
   width: 8em;
   margin-top: .75em;
 }
 
-@media screen and (max-width: 63.9375em) {
-  /* line 116, partials/_about-recent.scss */
-  #about {
-    height: 24em;
-    width: 100%;
-    margin-top: 1em;
-  }
-
-  /* line 121, partials/_about-recent.scss */
-  div#about-row.row {
-    margin: 0;
-    padding: 0;
-  }
-
-  /* line 125, partials/_about-recent.scss */
-  div.small-6.medium-6.large-3.columns {
-    padding: .1em;
-  }
-
-  /* line 129, partials/_about-recent.scss */
-  .callout {
-    height: 10em;
-    width: 11em;
-    margin-bottom: .1em;
-    padding: .5em;
-  }
-
-  /* line 137, partials/_about-recent.scss */
-  .img-container {
-    width: 5.5em;
-    height: 5.5em;
-  }
-
-  /* line 142, partials/_about-recent.scss */
-  .features-row {
-    width: 4em;
-    height: 4em;
-    margin: .75em  0;
-  }
-
-  /* line 148, partials/_about-recent.scss */
-  .callout-p {
-    font-size: 1em;
-    width: 9em;
-    margin-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* line 157, partials/_about-recent.scss */
-  #html {
-    height: 5em;
-    width: 5em;
-    margin-top: .25em;
-  }
-
-  /* line 163, partials/_about-recent.scss */
-  #easy-custom {
-    margin-top: 1em;
-    margin-right: .5em;
-  }
-}
-@media screen and (max-width: 39.9375em) {
-  /* line 172, partials/_about-recent.scss */
-  #about {
-    height: 30em;
-  }
-}
-/* line 180, partials/_about-recent.scss */
+/* line 163, partials/_about-recent.scss */
 #recent-projects {
-  height: 50em;
+  overflow: hidden;
   width: 100%;
   background-color: #5EBDEB;
   margin-top: 2em;
   padding: 1em;
 }
 
-/* line 187, partials/_about-recent.scss */
+/* line 170, partials/_about-recent.scss */
 #recent-header {
   position: relative;
   margin-top: 2em;
@@ -473,7 +405,7 @@ button.slide1-btn.medium.button {
   text-align: center;
 }
 
-/* line 194, partials/_about-recent.scss */
+/* line 177, partials/_about-recent.scss */
 #recent-header.lined-header span:before,
 #recent-header.lined-header span:after {
   content: "";
@@ -485,7 +417,7 @@ button.slide1-btn.medium.button {
   width: 1.5em;
 }
 
-/* line 198, partials/_about-recent.scss */
+/* line 181, partials/_about-recent.scss */
 #recent-img {
   display: block;
   margin-left: auto;
@@ -495,25 +427,14 @@ button.slide1-btn.medium.button {
 }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-  /* line 209, partials/_about-recent.scss */
-  #recent-projects {
-    height: 40em;
-    margin-top: 0;
-  }
-
-  /* line 214, partials/_about-recent.scss */
+  /* line 192, partials/_about-recent.scss */
   #recent-img {
     height: 25em;
     width: 30em;
   }
 }
 @media screen and (max-width: 39.9375em) {
-  /* line 223, partials/_about-recent.scss */
-  #recent-projects {
-    height: 30em;
-  }
-
-  /* line 226, partials/_about-recent.scss */
+  /* line 200, partials/_about-recent.scss */
   #recent-img {
     height: 20em;
     width: 25em;
@@ -522,9 +443,11 @@ button.slide1-btn.medium.button {
 /* line 24, partials/_teams.scss */
 #teams {
   margin-top: 2em;
+  overflow: hidden;
+  padding-bottom: 2em;
 }
 
-/* line 28, partials/_teams.scss */
+/* line 30, partials/_teams.scss */
 #team-header {
   margin-top: 2em;
   width: 5.25em;
@@ -536,7 +459,7 @@ button.slide1-btn.medium.button {
   text-align: center;
 }
 
-/* line 34, partials/_teams.scss */
+/* line 36, partials/_teams.scss */
 #team-header.lined-header span:before,
 #team-header.lined-header span:after {
   content: "";
@@ -548,46 +471,46 @@ button.slide1-btn.medium.button {
   width: 1.5em;
 }
 
-/* line 39, partials/_teams.scss */
+/* line 41, partials/_teams.scss */
 .team-slider {
   width: 100%;
 }
-/* line 42, partials/_teams.scss */
+/* line 44, partials/_teams.scss */
 .team-slider .slick-next, .team-slider .slick-next:focus, .team-slider .slick-next:hover {
   position: absolute;
   right: 10px;
   height: 35px;
   width: 35px;
 }
-/* line 49, partials/_teams.scss */
+/* line 51, partials/_teams.scss */
 .team-slider .slick-prev, .team-slider .slick-prev:focus, .team-slider .slick-prev:hover {
   position: absolute;
   left: 10px;
   height: 35px;
   width: 35px;
 }
-/* line 58, partials/_teams.scss */
+/* line 60, partials/_teams.scss */
 .team-slider .slick-dots li button:before,
 .team-slider .slick-dots li.slick-active button:before {
   color: #6d6d6e;
 }
 
-/* line 63, partials/_teams.scss */
+/* line 65, partials/_teams.scss */
 .team-slider.slick-initialized.slick-slider.slick-dotted {
   height: 30em;
 }
-/* line 66, partials/_teams.scss */
+/* line 68, partials/_teams.scss */
 .team-slider.slick-initialized.slick-slider.slick-dotted .slick-list {
   margin-left: 3em;
   margin-right: 3em;
   height: 100%;
 }
-/* line 72, partials/_teams.scss */
+/* line 74, partials/_teams.scss */
 .team-slider.slick-initialized.slick-slider.slick-dotted ul.slick-dots {
   margin-top: 1em;
 }
 
-/* line 80, partials/_teams.scss */
+/* line 82, partials/_teams.scss */
 .team-img-div.slick-slide.slick-current.slick-active,
 .team-img-div.slick-slide.slick-active,
 .team-img-div.slick-slide.slick-cloned,
@@ -597,24 +520,24 @@ button.slide1-btn.medium.button {
   width: 90%;
 }
 
-/* line 88, partials/_teams.scss */
+/* line 90, partials/_teams.scss */
 div.team-img-div.slick-list {
   margin-right: 2em!important;
   margin-left: 2em!important;
 }
 
-/* line 93, partials/_teams.scss */
+/* line 95, partials/_teams.scss */
 .team-img-div p {
   margin-top: 1em;
   margin-bottom: 0;
 }
 
-/* line 97, partials/_teams.scss */
+/* line 99, partials/_teams.scss */
 .team-img-div p:last-child {
   margin: 0;
 }
 
-/* line 100, partials/_teams.scss */
+/* line 102, partials/_teams.scss */
 .fellowship {
   position: relative;
   margin: 0 auto;
@@ -624,7 +547,7 @@ div.team-img-div.slick-list {
   object-fit: cover;
 }
 
-/* line 110, partials/_teams.scss */
+/* line 112, partials/_teams.scss */
 .team-span:after {
   content: '';
   display: inline-block;
@@ -634,37 +557,37 @@ div.team-img-div.slick-list {
 }
 
 @media screen and (max-width: 63.9375em) {
-  /* line 123, partials/_teams.scss */
+  /* line 125, partials/_teams.scss */
   .team-slider .slick-dots {
     margin-top: 0em;
   }
 
-  /* line 130, partials/_teams.scss */
+  /* line 132, partials/_teams.scss */
   .fellowship {
     height: 11em;
     width: 11em;
     border-radius: 6em;
   }
 
-  /* line 136, partials/_teams.scss */
+  /* line 138, partials/_teams.scss */
   .team-slider.slick-initialized.slick-slider.slick-dotted {
     height: 25em;
   }
 }
 @media screen and (max-width: 39.9375em) {
-  /* line 147, partials/_teams.scss */
+  /* line 149, partials/_teams.scss */
   .team-slider .slick-dots {
     margin-top: 0em;
   }
 
-  /* line 153, partials/_teams.scss */
+  /* line 155, partials/_teams.scss */
   .fellowship {
     height: 9em;
     width: 9em;
     border-radius: 4.5em;
   }
 
-  /* line 159, partials/_teams.scss */
+  /* line 161, partials/_teams.scss */
   .team-slider.slick-initialized.slick-slider.slick-dotted {
     height: 20em;
   }
@@ -672,9 +595,9 @@ div.team-img-div.slick-list {
 /* line 40, partials/_see-our-work.scss */
 #see-our-work {
   background-color: #657688;
-  height: 55em;
-  margin-top: 2em;
-  padding-top: 1em;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 2em;
 }
 
 /* line 47, partials/_see-our-work.scss */
@@ -763,15 +686,10 @@ div.team-img-div.slick-list {
     padding-bottom: 0;
     border-radius: .25em;
   }
-
-  /* line 108, partials/_see-our-work.scss */
-  #see-our-work {
-    height: 75em;
-  }
 }
 /* line 37, partials/_services.scss */
 #our-services {
-  height: 40em;
+  overflow: hidden;
 }
 
 /* line 41, partials/_services.scss */
@@ -899,30 +817,151 @@ div.team-img-div.slick-list {
 }
 @media screen and (max-width: 39.9375em) {
   /* line 114, partials/_services.scss */
-  #our-services {
-    margin-top: 0;
-  }
-
-  /* line 117, partials/_services.scss */
   #service-container {
     width: 100%;
   }
 
-  /* line 121, partials/_services.scss */
+  /* line 117, partials/_services.scss */
   #service-blocks {
-    width: 100%;
-    float: right;
     margin-top: 1em;
+    margin: 0 auto;
   }
 
-  /* line 126, partials/_services.scss */
+  /* line 122, partials/_services.scss */
   #iphone-img {
     display: none;
   }
 
-  /* line 129, partials/_services.scss */
+  /* line 125, partials/_services.scss */
   .service-descp {
-    min-width: 0;
+    width: 95%;
     height: 4em;
   }
+}
+/* line 33, partials/_our-blog.scss */
+#our-blog {
+  padding-top: 1em;
+  background-color: #FFAB31;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* line 39, partials/_our-blog.scss */
+#blog-header {
+  margin-top: 2em;
+  width: 13em;
+  border: 2px solid #fff;
+  border-radius: .15em;
+  color: #fff;
+  letter-spacing: .2em;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* line 42, partials/_our-blog.scss */
+#blog-header-p {
+  font-size: .85em;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 48, partials/_our-blog.scss */
+#blog-header.lined-header span:before,
+#blog-header.lined-header span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  margin-top: .5em;
+  border-bottom: 3px solid #fff;
+  top: 0;
+  width: 1.5em;
+}
+
+/* line 52, partials/_our-blog.scss */
+#blog-container {
+  width: 95%;
+}
+
+/* line 55, partials/_our-blog.scss */
+.blog-column {
+  margin-bottom: 2em !important;
+}
+
+/* line 62, partials/_our-blog.scss */
+.blog-info-block {
+  background-color: #fff;
+  padding-left: .75em;
+}
+
+/* line 67, partials/_our-blog.scss */
+.blog-info-header {
+  font-weight: 600;
+  padding-top: 1.5em;
+  margin-bottom: .5em;
+}
+
+/* line 73, partials/_our-blog.scss */
+.avatar-comments {
+  width: 100%;
+  font-size: .85em;
+  margin-bottom: 1.2em;
+  color: #1da1e1;
+}
+
+/* line 80, partials/_our-blog.scss */
+.avatar-icon, .comment-icon {
+  height: 1em;
+  width: 1em;
+  display: inline;
+}
+
+/* line 86, partials/_our-blog.scss */
+.blog-author {
+  display: inline;
+  margin-right: 1em;
+  padding-right: 1em;
+  border-right: .15em solid #E1E1E1;
+}
+
+/* line 93, partials/_our-blog.scss */
+.comments {
+  display: inline;
+}
+
+/* line 97, partials/_our-blog.scss */
+.blog-info-p {
+  font-size: .85em;
+  max-width: 25em;
+  padding-bottom: 3em;
+}
+
+/* line 103, partials/_our-blog.scss */
+.blog-date-bar {
+  width: 100%;
+  background-color: #2D3540;
+  margin-top: -2em;
+}
+
+/* line 109, partials/_our-blog.scss */
+.blog-date {
+  background-color: #1da1e1;
+  line-height: 1em;
+  color: #fff;
+  text-align: center;
+  height: 3em;
+  width: 3em;
+  padding-top: .5em;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+/* line 121, partials/_our-blog.scss */
+.blog-date-img {
+  height: 1.5em;
+  width: 1.75em;
+  float: right;
+  display: inline-block;
+  margin: .75em .75em;
 }

@@ -35,7 +35,7 @@ $blue-accent: #1DA1E1;
 }
 // Services container
 #our-services{
-	height: 40em;
+	overflow: hidden;
 }
 // Services Header
 #services-header{
@@ -111,24 +111,19 @@ $blue-accent: #1DA1E1;
 
  // Small Screen
 @media screen and (max-width: 39.9375em)  {
-	#our-services{
-		margin-top: 0;
-	}
 	#service-container{
-
 		width: 100%;
 	}
 	#service-blocks{
-		width: 100%;
-		float: right;
+		
 		margin-top: 1em;
+		margin: 0 auto;
 	}
 	#iphone-img{
 		display: none;
 	}
 	.service-descp{
-		
-		min-width: 0;
+		width: 95%;
 		height: 4em;
 
 	}

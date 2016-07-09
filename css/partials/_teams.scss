@@ -23,6 +23,8 @@ $grey-accent: #6d6d6e;
 // Teams container
 #teams{
   margin-top: 2em;
+  overflow: hidden;
+  padding-bottom: 2em;
 }
 //Team Header
 #team-header{

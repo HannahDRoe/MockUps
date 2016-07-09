@@ -1,0 +1,127 @@
+// Blue accent for date block
+$blue-accent: #1DA1E1;
+
+// White Span Lines
+@mixin span-settings-white{
+		content: "";
+		position: absolute;
+	  	height: 5px;
+	  	margin-top: .5em;
+	  	border-bottom: 3px solid #fff;
+	  	top: 0;
+	  	width: 1.5em;
+}
+// White Header
+@mixin white-header($width){
+		margin-top: 2em;
+		width: $width;
+		border: 2px solid #fff;
+		border-radius: .15em;
+		color: #fff;
+		letter-spacing: .2em;
+		font-weight: 600;
+		text-align: center;
+}
+// Header Paragraphs
+@mixin header-p{
+	font-size: .85em;
+	margin-top: 1.5em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+// Blog Div
+#our-blog{
+	padding-top: 1em;
+	background-color: #FFAB31;
+	overflow: hidden;
+	width: 100%;
+}
+#blog-header{
+@include white-header(13em);
+}
+#blog-header-p{
+	@include header-p;
+	color: #fff;
+}
+//Team Header Span
+#blog-header.lined-header span:before,
+ #blog-header.lined-header span:after {
+    @include span-settings-white;
+}
+// Blog posts container
+#blog-container{
+	width: 95%;
+}
+.blog-column{
+	margin-bottom: 2em !important;
+}
+// Img in blog post
+.blog-img{
+}
+// Blog Info div contains title, text, author and comments
+.blog-info-block{
+	background-color: #fff;
+	padding-left: .75em;
+}
+// Blog post title
+.blog-info-header{
+	font-weight: 600;
+	padding-top: 1.5em;
+	margin-bottom: .5em;
+}
+// Avatar and comments div
+.avatar-comments{
+	width: 100%;
+	font-size: .85em;
+	margin-bottom: 1.2em;
+	color: $blue-accent;
+}
+// Avatar and comment icons
+.avatar-icon, .comment-icon{
+	height: 1em;
+	width: 1em;
+	display: inline;
+}
+// Blog author 
+.blog-author{
+	display: inline;
+	margin-right: 1em;
+	padding-right: 1em;
+	border-right: .15em solid #E1E1E1;
+}
+// Comments 
+.comments{
+	display: inline;
+}
+// Blog sample text
+.blog-info-p{
+	font-size: .85em;
+	max-width: 25em;
+	padding-bottom: 3em;
+}
+// Blog date bar that spans bottom of post
+.blog-date-bar{
+	width: 100%;
+	background-color: #2D3540;
+	margin-top: -2em;
+}
+// Date block on left
+.blog-date{
+	background-color: $blue-accent;
+	line-height: 1em;
+	color: #fff;
+	text-align: center;
+	height: 3em;
+	width: 3em;
+	padding-top: .5em;
+	display: inline-block;
+	margin-bottom: 0;
+}
+// Blog date img on right
+.blog-date-img{
+	height: 1.5em;
+	width: 1.75em;
+	float: right;
+	display: inline-block;
+	margin: .75em .75em;
+}

@@ -44,12 +44,10 @@ $blue-accent: #1DA1E1;
 	  	width: 1.5em;
 }
 
-
 // About cotainer
 #about{
 	text-align: center;
-	margin: 0 auto;
-	height: 35em;
+	overflow: hidden;
 }
 //About Header
 #about-header{
@@ -61,46 +59,44 @@ $blue-accent: #1DA1E1;
 	@include span-settings-blue;
 }
 
-
 //http://www.flaticon.com/packs/web-design-set <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+// About Container
+#about-container{
+	width: 100%;
+}
 // About Row
 #about-row{
-	height: 15em;
-	width: 100%;
+	overflow: hidden;
+	width: 95%;
 	margin: 2em auto;
 }
-// Callouts/ Individual squares
-.callout{
-	height: 18em;
-	width: 15em;
-
+.about-squares{
+	text-align: center;
+		border: .15em solid #E1E1E1;
+		margin: 1em;
 }
+
 // Image containers for Grey circles
-.img-container{
+.about-img-container{
 	width: 10em;
   	height: 10em;
   	background-color: #ddd;
   	border-radius: 6em;
   	margin: 0 auto;
+  
 
 }
 // Icons position and size
-.features-row{
-	position: relative;
+.about-img{
 	width: 6em;
   	height: 6em;
   	margin: 2em auto 0 auto;
 }
 // Descriptions
-.callout-p{
-	
-	margin-top: 2em;
-	margin-left: -1em;
-	width: 12em;
-	font-size: 1.1em;
+.about-p{
 	color: #4D585C;
 	font-size: 1.2em;
-
 }
 // Special styles for HTML logo
 #html{
@@ -113,72 +109,59 @@ $blue-accent: #1DA1E1;
 
 // Medium Screen
 @media screen  and (max-width: 63.9375em) {
-	#about{
-		height: 24em;
-		width: 100%;
-		margin-top: 1em;
-	}
-	div#about-row.row{
-		margin: 0;
-		padding: 0;
-	}
-	div.small-6.medium-6.large-3.columns{
-		padding:.1em;
-	}
-	// Callouts/ Individual squares
-	.callout{
-		height: 10em;
-		width: 11em;
-		margin-bottom: .1em;
-		padding: .5em;
+	
+	
+// 	// Callouts/ Individual squares
+// 	.callout{
+// 		height: 10em;
+// 		width: 11em;
+// 		margin-bottom: .1em;
+// 		padding: .5em;
 
-	}
-	// Image containers for Grey circles
-	.img-container{
-		width: 5.5em;
-	  	height: 5.5em;
-	}
-	// Icons position and size
-	.features-row{
-		width: 4em;
-	  	height: 4em;
-	  	margin: .75em  0 ;
-	}
-	// Descriptions
-	.callout-p{
-		font-size: 1em;
-		width: 9em;
-		margin-top: 1em;
-		margin-left: auto;
-		margin-right: auto;
+// 	}
+// 	// Image containers for Grey circles
+// 	.img-container{
+// 		width: 5.5em;
+// 	  	height: 5.5em;
+// 	}
+// 	// Icons position and size
+// 	.features-row{
+// 		width: 4em;
+// 	  	height: 4em;
+// 	  	margin: .75em  0 ;
+// 	}
+// 	// Descriptions
+// 	.callout-p{
+// 		font-size: 1em;
+// 		width: 9em;
+// 		margin-top: 1em;
+// 		margin-left: auto;
+// 		margin-right: auto;
 
-	}
-	// Special styles for HTML logo
-	#html{
-		height: 5em;
-		width: 5em;
-		margin-top: .25em;
-	}
+// 	}
+// 	// Special styles for HTML logo
+// 	#html{
+// 		height: 5em;
+// 		width: 5em;
+// 		margin-top: .25em;
+// 	}
 
-	#easy-custom{
+// 	#easy-custom{
 
-		margin-top: 1em;
-		margin-right: .5em;
-	}
-}
+// 		margin-top: 1em;
+// 		margin-right: .5em;
+// 	}
+ }
 
 // Small Screen
 @media screen and (max-width: 39.9375em)  {
-	#about{
-		height: 30em;
-	}
 }
 
 // -------------------------- Recent Projects section --------------
 
 
 #recent-projects{
-	height: 50em;
+	overflow: hidden;
 	width: 100%;
 	background-color: #5EBDEB;
 	margin-top: 2em;
@@ -206,11 +189,6 @@ $blue-accent: #1DA1E1;
 // -------------------------------- Recent Projects Media Queries-------------
 // Medium Screen
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-	#recent-projects{
-		height: 40em;
-		margin-top: 0;
-	}
-	
 	#recent-img{
 		height: 25em;
     	width: 30em;
@@ -219,10 +197,6 @@ $blue-accent: #1DA1E1;
 
 // Small Screen
 @media screen and (max-width: 39.9375em)  {
-	
-	#recent-projects{
-		height: 30em;
-	}
 	#recent-img{
 		height: 20em;
     	width: 25em;

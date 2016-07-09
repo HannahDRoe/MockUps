@@ -25,28 +25,28 @@
       <button class="menu-icon" type="button" data-toggle></button>
       <div class="title-bar-title" id='title'>Company Name!</div>
     </div>
-  <div class="top-bar" id="top-menu">
-    <div class="top-bar-left">
-      <div id='logo'>
-        <img src="https://s3-us-west-2.amazonaws.com/imgweather/windy.svg">
-        <a href="#"></a>
-      </div> <!-- Close Logo div -->
-    </div> <!-- Close Top Bar Left -->
-    <div class="top-bar-right">
-      <ul class="menu" data-responsive-menu="drilldown medium-dropdown">
-        <li><a class="menu-btn medium button active" href="#">HOME</a></li>
-        <li><a class="menu-btn medium button" href="#">ABOUT</a></li>
-        <li><a class="menu-btn medium button" href="#">WORK</a></li>
-        <li><a class="menu-btn medium button" href="#">TEAMS</a></li>
-        <li><a class="menu-btn medium button" href="#">PROJECTS</a></li> 
-        <li><a class="menu-btn medium button" href="#">SERVICES</a></li>
-        <li><a class="menu-btn medium button" href="#">BLOGS</a></li>
-        <li><a class="menu-btn medium button" href="#">PRICING</a></li>
-        <li><a class="menu-btn medium button" href="#">CONTACT</a></li>
-      </ul> 
-    </div> <!--  Closes Top Bar Right -->
-  </div>
-</nav>
+    <div class="top-bar" id="top-menu">
+      <div class="top-bar-left">
+        <div id='logo'>
+          <img src="https://s3-us-west-2.amazonaws.com/imgweather/windy.svg">
+          <a href="#"></a>
+        </div> <!-- Close Logo div -->
+      </div> <!-- Close Top Bar Left -->
+      <div class="top-bar-right">
+        <ul class="menu" data-responsive-menu="drilldown medium-dropdown">
+          <li><a class="menu-btn medium button active" href="#">HOME</a></li>
+          <li><a class="menu-btn medium button" href="#">ABOUT</a></li>
+          <li><a class="menu-btn medium button" href="#">WORK</a></li>
+          <li><a class="menu-btn medium button" href="#">TEAMS</a></li>
+          <li><a class="menu-btn medium button" href="#">PROJECTS</a></li> 
+          <li><a class="menu-btn medium button" href="#">SERVICES</a></li>
+          <li><a class="menu-btn medium button" href="#">BLOGS</a></li>
+          <li><a class="menu-btn medium button" href="#">PRICING</a></li>
+          <li><a class="menu-btn medium button" href="#">CONTACT</a></li>
+        </ul> 
+      </div> <!--  Closes Top Bar Right -->
+    </div>
+  </nav>
 <!-- Slider -->
 <div id="content">
  <div class="top-slider">
@@ -64,45 +64,45 @@
 </div>
 <!-- About -->
 <div id="about">
+  <!-- About Header -->
   <h3 class="lined-header small-centered medium-centered large-centered" id="about-header"><span>ABOUT US</span></h3>
   <div class="row">
-  <p class="small-12 medium-9 large-9 medium-centered large-centered columns grey-header-p">
-    <em>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel varius quam. Suspendisse tincidunt velit ante, fermentum euismod lectus tincidunt at. Ut gravida viverra varius.
-    </em>
-  </p>
-  </div>
-  <div id="about-row" class="row">
-    <div class="small-6 medium-3 large-3 columns ">
-      <div class="callout">
-        <div class="img-container">
-          <img class="features-row" src="css/img/about-icons/layer.svg">
-          </div>
-          <p class="callout-p">CLEAN DESIGN</p>
-      </div>
-    </div>
-    <div class="small-6 medium-3 large-3 columns ">
-      <div class="callout">
-        <div class="img-container">
-          <img class="features-row" id="html" src="css/img/about-icons/html5.png">
+    <p class="small-12 medium-9 large-9 medium-centered large-centered columns grey-header-p">
+      <em>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel varius quam. Suspendisse tincidunt velit ante, fermentum euismod lectus tincidunt at. Ut gravida viverra varius.
+      </em>
+    </p>
+  </div>  <!-- end about header -->
+  <!-- About Squares -->
+  <div id="about-container" class="row">
+    <div class="small-up-1 medium-up-2 large-up-4 ">
+      <!-- Clean Design -->
+      <div class="column about-squares">
+        <div class="about-img-container">
+          <img class="about-img" src="css/img/about-icons/layer.svg">
         </div>
-        <p class="callout-p">HTML5&CSS3</p>
+        <p class="about-p">CLEAN DESIGN</p>
       </div>
-    </div>
-    <div class="small-6 medium-3 large-3 columns ">
-      <div class="callout">
-        <div class="img-container">
-          <img class="features-row" src="css/img/about-icons/devices.svg">
+      <!-- HTML5 and CSS -->
+      <div class="column about-squares">
+        <div class="about-img-container">
+          <img class="about-img" id="html" src="css/img/about-icons/html5.png">
         </div>
-        <p class="callout-p" >RESPONSIVE DESIGN</p>
+        <p class="about-p">HTML5&CSS3</p>
       </div>
-    </div>
-    <div class="small-6 medium-3 large-3 columns ">
-      <div class="callout">
-        <div class="img-container">
-          <img  class="features-row" src="css/img/about-icons/settings.svg">
+      <!-- Responsive Design -->
+      <div class="column about-squares">
+        <div class="about-img-container">
+          <img class="about-img" src="css/img/about-icons/devices.svg">
         </div>
-        <p class="callout-p" id='easy-custom'>EASY CUSTOMIZATION</p>
+        <p class="about-p" >RESPONSIVE DESIGN</p>
+      </div>
+      <!-- Easy Customization -->
+      <div class="column about-squares">
+        <div class="about-img-container">
+          <img  class="about-img" src="css/img/about-icons/settings.svg">
+        </div>
+        <p class="about-p" >EASY CUSTOMIZATION</p>
       </div>
     </div>
   </div>
@@ -126,6 +126,7 @@
 </div>
 <!-- Teams -->
 <div id="teams">
+<!-- Teams header -->
   <h3 class="lined-header small-centered medium-centered large-centered" id="team-header"><span>TEAMS</span></h3>
   <div class="row">
     <p class="small-12 medium-9 large-9 small-centered medium-centered large-centered columns grey-header-p">
@@ -133,7 +134,7 @@
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel varius quam. Suspendisse tincidunt velit ante, fermentum euismod lectus tincidunt at. Ut gravida viverra varius.
       </em>
     </p>
-  </div>
+  </div> <!-- end header -->
 
   <div class="team-slider">
     <div class="team-img-div"> 
@@ -192,7 +193,9 @@
     </div>
   </div>
 </div>
+<!-- See Our Work -->
 <div id="see-our-work">
+  <!-- Work Header -->
   <h3 class="lined-header small-centered medium-centered large-centered" id="work-header"><span>SEE OUR WORK</span></h3>
   <div class="row">
     <p class="small-12 medium-9 large-9 small-centered medium-centered large-centered columns " id="work-header-p">
@@ -200,7 +203,7 @@
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel varius quam. Suspendisse tincidunt velit ante, fermentum euismod lectus tincidunt at. Ut gravida viverra varius.
       </em>
     </p>
-  </div>
+  </div> <!-- end work header -->
   <div id="filter-btns" class="row">
     <div class="small-8 medium-8 large-7 small-centered medium-centered large-centered columns">
         <button class="work-btns medium button selected">ALL WORKS</button>
@@ -232,7 +235,9 @@
     </div>
   </div> <!-- end work row -->
 </div>
+<!-- Our Services -->
 <div id="our-services">
+  <!-- Services Header -->
   <h3 class="lined-header small-centered medium-centered large-centered" id="services-header"><span>OUR SERVICES</span></h3>
     <div class="row">
       <p class="small-12 medium-9 large-9 small-centered medium-centered large-centered columns grey-header-p" >
@@ -240,7 +245,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel varius quam. Suspendisse tincidunt velit ante.
         </em>
       </p>
-    </div>
+    </div> <!-- End Header -->
     <div id="service-container" class="row">
       <div id="iphone-side" class=" large-3 columns large-centered">
         <img  id="iphone-img" src="css/img/iphone.svg">
@@ -293,7 +298,207 @@
     </div> <!-- column -->
   </div>
 </div>
+<!-- Our Blog Posts -->
+<div id="our-blog">
+  <!-- Blog Header -->
+  <h3 class="lined-header small-centered medium-centered large-centered" id="blog-header"><span>OUR BLOG POSTS</span></h3>
+  <div class="row">
+    <p class="small-12 medium-9 large-9 small-centered medium-centered large-centered columns " id="blog-header-p">
+      <em>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel varius quam. Suspendisse tincidunt velit ante, fermentum euismod lectus tincidunt at. Ut gravida viverra varius.
+      </em>
+    </p>
+  </div> <!-- End Header -->
+  <div id="blog-container" class="row">
+    <div class="small-up-1 medium-up-2 large-up-4">
+      <!-- Blog Post 1 -->
+      <div class="column blog-column">
+        <!-- blog top img -->
+        <img class="blog-img" src="css/img/blog-post/blog-img1.png">
+        <!-- blog text div -->
+        <div class="blog-info-block">
+          <p class="blog-info-header">Sample text image blogs...</p>
+           <!-- author and comments line -->
+            <div class="avatar-comments">
+              <img src="css/img/blog-post/avatar.svg" class="avatar-icon">
+              <p class="blog-author">Author</p>
+              <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon">
+              <p class="comments">12 Comments</p>
+            </div>
+            <p class="blog-info-p">Lorem ipsum dolor sit amet, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div><!--  end blog info block -->
+          <!-- Blog date bar -->
+        <div class="blog-date-bar">
+          <p class="blog-date"><strong>28<br>SEPT</strong></p>
+          <img class="blog-date-img" src="css/img/blog-post/blog-date-pic.svg">
+        </div> <!-- End Blog date bar  -->
+      </div> <!-- End blog post 1 -->
 
+       <!-- Blog Post 2 -->
+      <div class="column blog-column">
+        <!-- blog text div -->
+        <div class="blog-info-block">
+          <p class="blog-info-header">Sample text image blogs...</p>
+           <!-- author and comments line -->
+            <div class="avatar-comments">
+              <img src="css/img/blog-post/avatar.svg" class="avatar-icon">
+              <p class="blog-author">Author</p>
+              <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon">
+              <p class="comments">12 Comments</p>
+            </div>
+            <p class="blog-info-p">Lorem ipsum dolor sit amet, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div><!--  end blog info block -->
+          <!-- Blog date bar -->
+        <div class="blog-date-bar">
+          <p class="blog-date"><strong>28<br>SEPT</strong></p>
+          <img class="blog-date-img" src="css/img/blog-post/blog-date-pic.svg">
+        </div> <!-- End Blog date bar  -->
+        <!-- blog top img -->
+        <img class="blog-img" src="css/img/blog-post/blog-img2.png">
+      </div> <!-- End blog post 2 -->
+       <!-- Blog Post 3 -->
+      <div class="column blog-column">
+        <!-- blog top img -->
+        <img class="blog-img" src="css/img/blog-post/blog-img3.png">
+        <!-- blog text div -->
+        <div class="blog-info-block">
+          <p class="blog-info-header">Sample text image blogs...</p>
+           <!-- author and comments line -->
+            <div class="avatar-comments">
+              <img src="css/img/blog-post/avatar.svg" class="avatar-icon">
+              <p class="blog-author">Author</p>
+              <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon">
+              <p class="comments">12 Comments</p>
+            </div>
+            <p class="blog-info-p">Lorem ipsum dolor sit amet, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div><!--  end blog info block -->
+          <!-- Blog date bar -->
+        <div class="blog-date-bar">
+          <p class="blog-date"><strong>28<br>SEPT</strong></p>
+          <img class="blog-date-img" src="css/img/blog-post/blog-date-pic.svg">
+        </div> <!-- End Blog date bar  -->
+      </div> <!-- End blog post 3 -->
+       <!-- Blog Post 4 -->
+      <div class="column blog-column">
+        <!-- blog text div -->
+        <div class="blog-info-block">
+          <p class="blog-info-header">Sample text image blogs...</p>
+           <!-- author and comments line -->
+            <div class="avatar-comments">
+              <img src="css/img/blog-post/avatar.svg" class="avatar-icon">
+              <p class="blog-author">Author</p>
+              <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon">
+              <p class="comments">12 Comments</p>
+            </div>
+            <p class="blog-info-p">Lorem ipsum dolor sit amet, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div><!--  end blog info block -->
+          <!-- Blog date bar -->
+        <div class="blog-date-bar">
+          <p class="blog-date"><strong>28<br>SEPT</strong></p>
+          <img class="blog-date-img" src="css/img/blog-post/blog-date-pic.svg">
+        </div> <!-- End Blog date bar  -->
+        <!-- blog top img -->
+        <img class="blog-img" src="css/img/blog-post/blog-img1.png">
+      </div> <!-- End blog post 4 -->
+      <!-- Blog Post 5 -->
+      <div class="column blog-column">
+        <!-- blog top img -->
+        <img class="blog-img" src="css/img/blog-post/blog-img2.png">
+        <!-- blog text div -->
+        <div class="blog-info-block">
+          <p class="blog-info-header">Sample text image blogs...</p>
+           <!-- author and comments line -->
+            <div class="avatar-comments">
+              <img src="css/img/blog-post/avatar.svg" class="avatar-icon">
+              <p class="blog-author">Author</p>
+              <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon">
+              <p class="comments">12 Comments</p>
+            </div>
+            <p class="blog-info-p">Lorem ipsum dolor sit amet, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div><!--  end blog info block -->
+          <!-- Blog date bar -->
+        <div class="blog-date-bar">
+          <p class="blog-date"><strong>28<br>SEPT</strong></p>
+          <img class="blog-date-img" src="css/img/blog-post/blog-date-pic.svg">
+        </div> <!-- End Blog date bar  -->
+      </div> <!-- End blog post 5 -->
+       <!-- Blog Post 6 -->
+      <div class="column blog-column">
+        <!-- blog text div -->
+        <div class="blog-info-block">
+          <p class="blog-info-header">Sample text image blogs...</p>
+           <!-- author and comments line -->
+            <div class="avatar-comments">
+              <img src="css/img/blog-post/avatar.svg" class="avatar-icon">
+              <p class="blog-author">Author</p>
+              <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon">
+              <p class="comments">12 Comments</p>
+            </div>
+            <p class="blog-info-p">Lorem ipsum dolor sit amet, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div><!--  end blog info block -->
+          <!-- Blog date bar -->
+        <div class="blog-date-bar">
+          <p class="blog-date"><strong>28<br>SEPT</strong></p>
+          <img class="blog-date-img" src="css/img/blog-post/blog-date-pic.svg">
+        </div> <!-- End Blog date bar  -->
+        <!-- blog top img -->
+        <img class="blog-img" src="css/img/blog-post/blog-img3.png">
+      </div> <!-- End blog post 6 -->
+       <!-- Blog Post 7 -->
+      <div class="column blog-column">
+        <!-- blog top img -->
+        <img class="blog-img" src="css/img/blog-post/blog-img1.png">
+        <!-- blog text div -->
+        <div class="blog-info-block">
+          <p class="blog-info-header">Sample text image blogs...</p>
+           <!-- author and comments line -->
+            <div class="avatar-comments">
+              <img src="css/img/blog-post/avatar.svg" class="avatar-icon">
+              <p class="blog-author">Author</p>
+              <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon">
+              <p class="comments">12 Comments</p>
+            </div>
+            <p class="blog-info-p">Lorem ipsum dolor sit amet, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div><!--  end blog info block -->
+          <!-- Blog date bar -->
+        <div class="blog-date-bar">
+          <p class="blog-date"><strong>28<br>SEPT</strong></p>
+          <img class="blog-date-img" src="css/img/blog-post/blog-date-pic.svg">
+        </div> <!-- End Blog date bar  -->
+      </div> <!-- End blog post 7 -->
+       <!-- Blog Post 8 -->
+      <div class="column blog-column">
+        <div class="column blog-column">
+        <!-- blog text div -->
+        <div class="blog-info-block">
+          <p class="blog-info-header">Sample text image blogs...</p>
+           <!-- author and comments line -->
+            <div class="avatar-comments">
+              <img src="css/img/blog-post/avatar.svg" class="avatar-icon">
+              <p class="blog-author">Author</p>
+              <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon">
+              <p class="comments">12 Comments</p>
+            </div>
+            <p class="blog-info-p">Lorem ipsum dolor sit amet, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div><!--  end blog info block -->
+          <!-- Blog date bar -->
+        <div class="blog-date-bar">
+          <p class="blog-date"><strong>28<br>SEPT</strong></p>
+          <img class="blog-date-img" src="css/img/blog-post/blog-date-pic.svg">
+        </div> <!-- End Blog date bar  -->
+        <!-- blog top img -->
+        <img class="blog-img" src="css/img/blog-post/blog-img3.png">
+      </div> <!-- End blog post 8 -->
+  </div> <!-- End blog container -->
+</div> <!-- End Our Blog Posts -->
   <!-- Javascript  -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.2/foundation.min.js"></script>
