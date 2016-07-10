@@ -17,14 +17,14 @@ div.slick-slide{
 	outline: none;
 }
 
-// Next Button 
+// Next Button
 .slick-next, .slick-next:focus, .slick-next:hover{
 	position: absolute;
     right: 10px;
     height: 40px;
     width: 40px;
 }
-//Previous Button 
+//Previous Button
 .slick-prev, .slick-prev:focus, .slick-prev:hover{
 	position: absolute;
     left: 10px;
@@ -44,7 +44,7 @@ div.slick-slide{
 	bottom: 2.5em;
 }
 // Dot color
-.slick-dots li button:before, 
+.slick-dots li button:before,
 .slick-dots li.slick-active button:before{
 	color: #FFFFFF;
 }
@@ -54,7 +54,7 @@ div.slick-slide{
 	padding: 0;
 }
 #slide1{
-	background: url('img/top-slides/mount1.jpeg')no-repeat center;
+	background: url('../img/top-slides/mount1.jpeg')no-repeat center;
 	background-size: cover;
 }
 #slide1-contents{
@@ -76,11 +76,11 @@ button.slide1-btn.medium.button{
 	border-radius: 0;
 }
 #slide2{
-	background: url('img/top-slides/mount2.jpg')no-repeat center;
+	background: url('../img/top-slides/mount2.jpg')no-repeat center;
 	background-size: cover;
 }
 #slide3{
-	background: url('img/top-slides/mount3.jpg') no-repeat center;
+	background: url('../img/top-slides/mount3.jpg') no-repeat center;
 	background-size: cover;
 }
 //Icons made by  from Flaticon is licensed by http://creativecommons.org

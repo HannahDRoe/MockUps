@@ -38,7 +38,7 @@
 }
 
 #see-our-work{
-	background-color:#657688; 
+	background-color:#657688;
 	overflow: hidden;
 	width: 100%;
 	padding-bottom: 2em;
@@ -74,7 +74,6 @@
 }
 #work-img-div{
 	margin-top: 2em;
-
 }
 .work-img{
 	display: inline-block;
@@ -82,9 +81,9 @@
 	height: 12.5em;
 	margin-bottom: 1em;
 	object-fit: cover;
-	
+
 }
-	
+
 
 // Medium Screen
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
@@ -99,10 +98,10 @@
 @media screen and (max-width: 39.9375em)  {
 
 	.work-btns.medium.button{
-		height: 3em !important; 
+		height: 3em !important;
 		padding-top: 0em;
 		padding-bottom: 0;
 		border-radius: .25em;
 	}
-	
+
 }

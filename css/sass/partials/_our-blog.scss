@@ -55,9 +55,7 @@ $blue-accent: #1DA1E1;
 .blog-column{
 	margin-bottom: 2em !important;
 }
-// Img in blog post
-.blog-img{
-}
+
 // Blog Info div contains title, text, author and comments
 .blog-info-block{
 	background-color: #fff;
@@ -82,14 +80,14 @@ $blue-accent: #1DA1E1;
 	width: 1em;
 	display: inline;
 }
-// Blog author 
+// Blog author
 .blog-author{
 	display: inline;
 	margin-right: 1em;
 	padding-right: 1em;
 	border-right: .15em solid #E1E1E1;
 }
-// Comments 
+// Comments
 .comments{
 	display: inline;
 }

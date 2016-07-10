@@ -61,96 +61,34 @@ $blue-accent: #1DA1E1;
 
 //http://www.flaticon.com/packs/web-design-set <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
-// About Container
+// About container: holds squares
 #about-container{
-	width: 100%;
-}
-// About Row
-#about-row{
-	overflow: hidden;
-	width: 95%;
-	margin: 2em auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 .about-squares{
-	text-align: center;
-		border: .15em solid #E1E1E1;
-		margin: 1em;
-}
-
-// Image containers for Grey circles
-.about-img-container{
-	width: 10em;
-  	height: 10em;
-  	background-color: #ddd;
-  	border-radius: 6em;
-  	margin: 0 auto;
-  
+	border: .15em solid #E1E1E1;
+	margin-bottom: 2em;
 
 }
 // Icons position and size
 .about-img{
-	width: 6em;
-  	height: 6em;
-  	margin: 2em auto 0 auto;
+	width: 12em;
+  	height: 12em;
+	margin-top: 1em;
 }
 // Descriptions
 .about-p{
 	color: #4D585C;
 	font-size: 1.2em;
+	margin: 1.75em auto;
 }
-// Special styles for HTML logo
-#html{
-	height: 8em;
-	width: 8em;
-	margin-top: .75em;
-}
-
 // -------------------------- About Section Media Queries-------------
 
 // Medium Screen
 @media screen  and (max-width: 63.9375em) {
-	
-	
-// 	// Callouts/ Individual squares
-// 	.callout{
-// 		height: 10em;
-// 		width: 11em;
-// 		margin-bottom: .1em;
-// 		padding: .5em;
 
-// 	}
-// 	// Image containers for Grey circles
-// 	.img-container{
-// 		width: 5.5em;
-// 	  	height: 5.5em;
-// 	}
-// 	// Icons position and size
-// 	.features-row{
-// 		width: 4em;
-// 	  	height: 4em;
-// 	  	margin: .75em  0 ;
-// 	}
-// 	// Descriptions
-// 	.callout-p{
-// 		font-size: 1em;
-// 		width: 9em;
-// 		margin-top: 1em;
-// 		margin-left: auto;
-// 		margin-right: auto;
 
-// 	}
-// 	// Special styles for HTML logo
-// 	#html{
-// 		height: 5em;
-// 		width: 5em;
-// 		margin-top: .25em;
-// 	}
-
-// 	#easy-custom{
-
-// 		margin-top: 1em;
-// 		margin-right: .5em;
-// 	}
  }
 
 // Small Screen
@@ -203,4 +141,3 @@ $blue-accent: #1DA1E1;
 	}
 
 }
-	

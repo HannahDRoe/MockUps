@@ -17,7 +17,7 @@ body{
 //Header Span Lines
 .lined-header span {
   display: inline-block;
-  position: relative;  
+  position: relative;
 }
 
 .lined-header span:before {
@@ -42,7 +42,7 @@ body{
 	@include header-p;
 	color: #fff;
 }
- 
+
 @import "compass";
 @import 'partials/_top-bar';
 @import 'partials/_slider.scss';

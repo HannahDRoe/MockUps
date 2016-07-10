@@ -18,7 +18,7 @@
 	   			 	arrows: true
 	   			 }
 	   		}],
-	
+
       });
         $(".team-slider").slick({
           	dots: true,
@@ -29,7 +29,7 @@
             nextArrow:"<img class='slick-next' src='css/img/slider-arrows/greyArrowNext.svg'>",
             responsive: [
               {
-                breakpoint: 1000,
+                breakpoint: 1200,
                 settings: {
                   slidesToShow: 3
                 }
