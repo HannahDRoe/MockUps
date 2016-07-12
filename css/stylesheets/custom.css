@@ -677,3 +677,181 @@ div.team-img-div.slick-list {
   float: right;
   display: inline-block;
   margin: .75em .75em; }
+
+#load-btn {
+  margin: 0 auto;
+  outline: none;
+  border-radius: .25em;
+  font-weight: bold;
+  color: #6e7b8a;
+  background-color: #dedede;
+  color: darken; }
+
+#our-plans {
+  margin-top: 2em;
+  margin-bottom: 5em;
+  overflow: hidden; }
+
+#plans-header {
+  margin-top: 2em;
+  width: 8em;
+  border: 2px solid #1DA1E1;
+  border-radius: 0.15em;
+  color: #1DA1E1;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  text-align: center; }
+
+#plans-header.lined-header span:after,
+#plans-header.lined-header span:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  margin-top: 0.5em;
+  border-bottom: 3px solid #1DA1E1;
+  top: 0;
+  width: 1.5em; }
+
+.plan-blocks {
+  border: 0.15em solid #E1E1E1;
+  margin-bottom: 2em;
+  text-align: center; }
+
+.plan-title {
+  height: 3em;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-top: 0.75em;
+  color: #fff; }
+
+.plan-details {
+  height: 16em;
+  padding-top: 2em;
+  border-bottom: 0.10em solid #E1E1E1; }
+
+.plan-details p {
+  line-height: 3em;
+  font-size: 0.85em; }
+
+.price-div {
+  width: 100%;
+  height: 6em;
+  border-bottom: 0.10em solid #E1E1E1;
+  margin-top: 0.5em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.plan-btn-div {
+  height: 5em;
+  border-bottom: 0.10em solid #E1E1E1; }
+
+.plan-btn {
+  margin-top: 1em;
+  margin-right: 0.2em;
+  outline: none;
+  border-radius: 0.25em;
+  font-weight: bold;
+  color: #6e7b8a;
+  background-color: #dedede; }
+
+.plan-blocks.plan-selected {
+  background-color: #647687;
+  color: #fff;
+  border: 0.10em solid #E1E1E1; }
+  .plan-blocks.plan-selected .plan-details,
+  .plan-blocks.plan-selected .price-div {
+    border-bottom: 0.1em solid #8e8e8e; }
+
+.plan-selected-btn {
+  color: #fff;
+  background-color: #1DA1E1; }
+
+#plan-1 {
+  background-color: #9FA6AE; }
+
+#plan-1-price {
+  font-size: 3em;
+  width: 2em;
+  float: left;
+  margin-left: 1em;
+  color: #9FA6AE; }
+
+#plan-1-month {
+  width: 5em;
+  height: 2em;
+  font-size: 0.85em;
+  padding: 0.25em;
+  color: #fff;
+  margin-top: 2em;
+  margin-right: auto;
+  float: left;
+  background-color: #9FA6AE; }
+
+#plan-2 {
+  background-color: #1DA1E1; }
+
+#plan-2-price {
+  font-size: 3em;
+  width: 2em;
+  float: left;
+  margin-left: 1em; }
+
+#plan-2-month {
+  width: 5em;
+  height: 2em;
+  font-size: 0.85em;
+  padding: 0.25em;
+  color: #fff;
+  margin-top: 2em;
+  margin-right: auto;
+  float: left;
+  background-color: #1DA1E1; }
+
+#plan-3 {
+  background-color: #EB758B; }
+
+#plan-3-price {
+  font-size: 3em;
+  width: 2em;
+  float: left;
+  margin-left: 1em;
+  color: #EB758B; }
+
+#plan-3-month {
+  width: 5em;
+  height: 2em;
+  font-size: 0.85em;
+  padding: 0.25em;
+  color: #fff;
+  margin-top: 2em;
+  margin-right: auto;
+  float: left;
+  background-color: #EB758B; }
+
+#plan-4 {
+  background-color: #C183D6; }
+
+#plan-4-price {
+  font-size: 3em;
+  width: 2em;
+  float: left;
+  margin-left: 1em;
+  color: #C183D6; }
+
+#plan-4-month {
+  width: 5em;
+  height: 2em;
+  font-size: 0.85em;
+  padding: 0.25em;
+  color: #fff;
+  margin-top: 2em;
+  margin-right: auto;
+  float: left;
+  background-color: #C183D6; }
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  #plan-1-price, #plan-2-price, #plan-3-price, #plan-4-price {
+    margin-left: 30%; } }
+@media screen and (max-width: 39.9375em) {
+  #plan-1-price, #plan-2-price, #plan-3-price, #plan-4-price {
+    margin-left: 33%; } }

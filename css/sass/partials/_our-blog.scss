@@ -29,6 +29,15 @@ $blue-accent: #1DA1E1;
 	margin-bottom: 2em;
 	text-align: center;
 }
+// Grey Load more button
+@mixin grey-button {
+    outline: none;
+    border-radius: .25em;
+    font-weight: bold;
+    color: darken(#7B8896, 5%);
+    background-color:darken(#F2F2F2, 8%);
+
+}
 // Blog Div
 #our-blog{
 	padding-top: 1em;
@@ -122,4 +131,11 @@ $blue-accent: #1DA1E1;
 	float: right;
 	display: inline-block;
 	margin: .75em .75em;
+}
+
+// Load Button at the bottom
+#load-btn{
+	margin: 0 auto;
+	@include grey-button;
+	color: darken;
 }
