@@ -31,7 +31,7 @@ $plan-4-color: #C183D6;
 }
 // Grey Buttons
 @mixin grey-button {
-    margin-top: 1em;
+    margin-top: 1.25em;
     margin-right: 0.2em;
     outline: none;
     border-radius: 0.25em;
@@ -91,7 +91,7 @@ $plan-4-color: #C183D6;
 // Plan Button Div
 .plan-btn-div {
     height: 5em;
-    border-bottom: 0.10em solid #E1E1E1;
+
 }
 // Plan Button
 .plan-btn {

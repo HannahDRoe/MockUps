@@ -678,14 +678,24 @@ div.team-img-div.slick-list {
   display: inline-block;
   margin: .75em .75em; }
 
+#load-btn-div {
+  text-align: center; }
+
 #load-btn {
-  margin: 0 auto;
+  width: 10em;
   outline: none;
   border-radius: .25em;
   font-weight: bold;
   color: #6e7b8a;
   background-color: #dedede;
   color: darken; }
+
+#load-btn:hover {
+  color: #fff;
+  background-color: #1DA1E1; }
+
+#load-btn:active {
+  background-color: #1781b4; }
 
 #our-plans {
   margin-top: 2em;
@@ -742,11 +752,10 @@ div.team-img-div.slick-list {
   margin-right: auto; }
 
 .plan-btn-div {
-  height: 5em;
-  border-bottom: 0.10em solid #E1E1E1; }
+  height: 5em; }
 
 .plan-btn {
-  margin-top: 1em;
+  margin-top: 1.25em;
   margin-right: 0.2em;
   outline: none;
   border-radius: 0.25em;

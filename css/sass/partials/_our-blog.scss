@@ -132,10 +132,19 @@ $blue-accent: #1DA1E1;
 	display: inline-block;
 	margin: .75em .75em;
 }
-
+#load-btn-div{
+	text-align: center;
+}
 // Load Button at the bottom
 #load-btn{
-	margin: 0 auto;
+	width: 10em;
 	@include grey-button;
 	color: darken;
+}
+#load-btn:hover{
+		color:#fff;
+		background-color: $blue-accent;
+	}
+#load-btn:active{
+	background-color: darken($blue-accent, 10%);
 }
