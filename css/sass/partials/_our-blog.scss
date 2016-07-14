@@ -52,7 +52,7 @@ $blue-accent: #1DA1E1;
 	@include header-p;
 	color: #fff;
 }
-//Team Header Span
+//Blog Header Span
 #blog-header.lined-header span:before,
  #blog-header.lined-header span:after {
     @include span-settings-white;
@@ -147,4 +147,8 @@ $blue-accent: #1DA1E1;
 	}
 #load-btn:active{
 	background-color: darken($blue-accent, 10%);
+}
+.hide{
+  transition:ease-in-out;
+
 }

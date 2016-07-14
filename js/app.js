@@ -17,7 +17,5 @@ $('#load-btn').click(function(e){
 	}else {
 		$('.hide-me').addClass('hide');
 		$('#load-btn').text('Load More...')
-	}
-
-
+	};
 });

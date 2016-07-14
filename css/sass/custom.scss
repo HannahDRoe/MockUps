@@ -44,6 +44,7 @@ body{
 }
 
 @import "compass";
+@import "../font-awesome-4.6.3/scss/font-awesome.scss";
 @import 'partials/_top-bar';
 @import 'partials/_slider.scss';
 @import 'partials/_about-recent.scss';
@@ -52,3 +53,4 @@ body{
 @import 'partials/_services.scss';
 @import 'partials/_our-blog.scss';
 @import 'partials/_our-plans.scss';
+@import 'partials/_contact.scss';

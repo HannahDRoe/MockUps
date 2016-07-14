@@ -1,0 +1,143 @@
+// Blue accent for date block
+$blue-accent: #1DA1E1;
+$contact-grey: #B1B1B1;
+// White Span Lines
+@mixin span-settings-white {
+	content: "";
+	position: absolute;
+	height: 5px;
+	margin-top: 0.5em;
+	border-bottom: 3px solid #fff;
+	top: 0;
+	width: 1.5em;
+}
+// White Header
+@mixin white-header($width) {
+	margin-top: 2em;
+	width: $width;
+	border: 2px solid #fff;
+	border-radius: 0.15em;
+	color: #fff;
+	letter-spacing: 0.2em;
+	font-weight: 600;
+	text-align: center;
+}
+// Header Paragraphs
+@mixin header-p {
+	font-size: 0.85em;
+	margin-top: 1.5em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+// Grey Load more button
+@mixin grey-button {
+	outline: none;
+	border-radius: 0.25em;
+	font-weight: bold;
+	color: darken(#7B8896, 5%);
+	background-color: darken(#F2F2F2, 8%);
+}
+// Contact Div
+#contact {
+	padding-top: 1em;
+	background-color: #333B48;
+	overflow: hidden;
+	width: 100%;
+}
+#contact-header {
+	@include white-header(10em);
+}
+// Text under header
+#contact-header-p {
+	@include header-p;
+	color: #fff;
+}
+//Contact Header Span
+#contact-header.lined-header span:after,
+#contact-header.lined-header span:before {
+	@include span-settings-white;
+}
+// Contact form  container
+#contact-container {
+	width: 95%;
+
+}
+// Contact Form
+#contact-form {}
+// Input Divs
+.form-group {
+	position: relative;
+	margin-bottom: 1em;
+}
+// Input styles
+.contact-input {
+	background-color: #3E4755;
+	color: $contact-grey;
+	margin: 0;
+	padding-left: 30px;
+	font-size: 0.85em;
+	font-weight: normal;
+	border-color: #56606F;
+}
+// Input focus
+.contact-input:focus {
+	background-color: #3E4755;
+	color: #ddd;
+}
+//Icon Position and appearance
+.input-group-addon {
+	padding: 0.5em;
+	font-size: 1em;
+	font-weight: lighter;
+	color: $contact-grey;
+	position: absolute;
+	width: 1em;
+	height: 1em;
+}
+#message-textarea {
+	padding-top: 0.5em;
+	height: 9em;
+}
+#send-message {
+	width: 100%;
+	text-align: left;
+}
+#message-icon {
+	color: #fff;
+	padding-left: 90%;
+}
+#google-map {
+	height: 18em;
+	width: 100%;
+}
+// Contact Info at bottom
+#contact-line{
+	height: 20em;
+	width: 100%;
+	padding-top: 5em;
+	color: $contact-grey;
+	font-size: .85em;
+	font-weight: 200;
+	border-top: 0.1em solid $contact-grey;
+}
+// Contact header that's underlined
+.contact-info-header{
+	color:#fff;
+}
+// Contact Logo
+#contact-logo{
+	height: 3em;
+	width: 4em;
+	background-color:  #333B48 ;
+}
+// Blue circle behind icon
+.blue-circle{
+	height: 5em;
+	width: 5em;
+	border-radius: 3em;
+	background-color: $blue-accent;
+	float: left;
+	i{
+		float: left;
+		}
+}
