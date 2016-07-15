@@ -2393,6 +2393,10 @@ button.slide1-btn.medium.button {
     height: 2em;
     width: 2em; } }
 @media screen and (max-width: 39.9375em) {
+  .slick-dots {
+    padding-top: 3em;
+    margin-bottom: 2em; }
+
   button.slide1-btn.medium.button {
     height: 3em !important;
     width: 6em;
@@ -3088,7 +3092,9 @@ div.team-img-div.slick-list {
   width: 1.5em; }
 
 #contact-container {
-  width: 95%; }
+  width: 100%;
+  padding-bottom: 2em;
+  border-bottom: 0.1em solid #B1B1B1; }
 
 .form-group {
   position: relative;
@@ -3134,26 +3140,86 @@ div.team-img-div.slick-list {
 
 #contact-line {
   height: 20em;
-  width: 100%;
-  padding-top: 5em;
+  padding-top: 3em;
   color: #B1B1B1;
   font-size: .85em;
   font-weight: 200;
-  border-top: 0.1em solid #B1B1B1; }
+  margin: 0 auto;
+  width: 100%; }
+
+#contact-line-div {
+  height: 100%;
+  width: 100%;
+  margin-left: 5%;
+  margin-right: auto; }
+
+.contact-info {
+  height: 6em;
+  border-right: 0.1em solid #B1B1B1;
+  min-width: 15em;
+  max-width: 25em; }
 
 .contact-info-header {
   color: #fff; }
 
 #contact-logo {
-  height: 3em;
+  width: 7em; }
+
+#contact-logo img {
+  height: 4em;
   width: 4em;
+  float: left;
   background-color: #333B48; }
 
+#logo-p {
+  font-size: 2em;
+  margin-left: 3em; }
+
 .blue-circle {
+  position: static;
   height: 5em;
   width: 5em;
   border-radius: 3em;
   background-color: #1DA1E1;
-  float: left; }
+  float: left;
+  margin-right: 1em;
+  margin-left: 1em;
+  text-align: center; }
   .blue-circle i {
-    float: left; }
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+    margin-top: 1em; }
+
+.contact-info-p {
+  display: block;
+  font-size: 1em;
+  height: 6em; }
+
+#contact-email {
+  border: none; }
+
+@media screen and (max-width: 63.9375em) {
+  .blue-circle {
+    margin-right: 2em; }
+
+  div#contact-email.column.contact-info {
+    margin-top: -3em !important; } }
+@media screen and (max-width: 39.9375em) {
+  .contact-info {
+    border-right: none;
+    margin-left: 0em; }
+
+  .blue-circle {
+    margin-right: 2em; }
+
+  div#contact-email.column.contact-info {
+    margin-top: 0 !important; } }
+#footer {
+  height: 5em;
+  padding-top: .5em;
+  background-color: #212832;
+  text-align: center;
+  color: #fff; }
+  #footer a {
+    color: #FFAB31; }

@@ -96,6 +96,10 @@ button.slide1-btn.medium.button{
 // Small Screen
 @media screen and (max-width: 39.9375em)  {
 
+	.slick-dots{
+		padding-top: 3em;
+		margin-bottom: 2em;
+	}
 	button.slide1-btn.medium.button{
 		height: 3em !important;
 		width: 6em;

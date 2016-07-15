@@ -717,49 +717,54 @@
             </div>
         </div>
         <!-- Row of contact info below map and form -->
-        <div id="contact-line">
-            <div class="row">
+        <div id="contact-line" class="row">
+            <div id="contact-line-div" class=" small-up-1 medium-up-2 large-up-4">
                 <!-- Logo -->
-                <div class="small-12 medium-6 large-2 columns">
-                    <img id="contact-logo"src=https://s3-us-west-2.amazonaws.com/imgweather/windy.svg alt="Logo" />
-                    <p>
-                        LOGO
+                 <div class="column contact-info show-for-large" id="contact-logo">
+                    <img src=https://s3-us-west-2.amazonaws.com/imgweather/windy.svg alt="Logo" />
+                    <p id="logo-p">
+                        <strong>LOGO</strong>
                     </p>
                 </div>
                 <!-- Address -->
-                <div class="small-12 medium-6 large-2 columns">
-                    <div class="contact-cirlce-div">
+                <div class="column contact-info">
+                    <div class="contact-circle-div">
                         <span class="blue-circle"><i class="fa fa-home fa-fw"></i></span>
-                        <p>
-                            <span class="contact-info-header"><u>ADDRESS:</u></span><br>
-                            123 Street-E14/E15 <br>
-                            Cambridge, USA
-                        </p>
                     </div>
+                    <p class="contact-info-p">
+                        <span class="contact-info-header"><u>ADDRESS:</u></span><br>
+                        123 Street-E14/E15 <br>
+                        Cambridge, USA
+                    </p>
                 </div>
                 <!-- Phone -->
-                <div class="small-12 medium-6 large-2 columns">
-                    <div class="contact-cirlce-div">
+                <div class="column contact-info">
+                    <div class="contact-circle-div">
                         <span class="blue-circle"><i class="fa fa-phone fa-fw"></i></span>
-                        <p>
-                            <span class="contact-info-header"><u>PHONE:</u></span><br>
-                            (+12)3456 7890
-                        </p>
                     </div>
+                    <p class="contact-info-p">
+                        <span class="contact-info-header"><u>PHONE:</u></span><br>
+                        (+12)3456 7890
+                    </p>
                 </div>
                 <!-- Email -->
-                <div class="small-12 medium-6 large-2 columns">
-                    <div class="contact-cirlce-div">
+                 <div id="contact-email"class="column contact-info">
+                    <div class="contact-circle-div">
                         <span class="blue-circle"><i class="fa fa-envelope-o fa-fw"></i></span>
-                        <p>
-                            <span class="contact-info-header"><u>EMAIL:</u></span><br>
-                            abc123@mail.com
-                        </p>
                     </div>
+                    <p class="contact-info-p">
+                        <span class="contact-info-header"><u>EMAIL:</u></span><br>
+                        abc123@mail.com
+                    </p>
                 </div>
             </div>
         </div>
     </div>
+    <footer id="footer">
+        <p>
+            COPYRIGHT &reg; 2015 <a href="">BOOTEXPERTS.COM</a>. ALL RIGHTS RESERVED.
+        </p>
+    </footer>
 
     <!-- Javascript  -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>

@@ -1,3 +1,5 @@
+// This stylesheet also contains the footer styles
+
 // Blue accent for date block
 $blue-accent: #1DA1E1;
 $contact-grey: #B1B1B1;
@@ -59,8 +61,9 @@ $contact-grey: #B1B1B1;
 }
 // Contact form  container
 #contact-container {
-	width: 95%;
-
+	width: 100%;
+	padding-bottom: 2em;
+	border-bottom: 0.1em solid $contact-grey;
 }
 // Contact Form
 #contact-form {}
@@ -113,31 +116,110 @@ $contact-grey: #B1B1B1;
 // Contact Info at bottom
 #contact-line{
 	height: 20em;
-	width: 100%;
-	padding-top: 5em;
+	padding-top: 3em;
 	color: $contact-grey;
 	font-size: .85em;
 	font-weight: 200;
-	border-top: 0.1em solid $contact-grey;
+	margin: 0 auto;
+	width: 100%;
+
 }
+#contact-line-div{
+	height: 100%;
+	width: 100%;
+	margin-left: 5%;
+	margin-right: auto;
+}
+.contact-info{
+	height: 6em;
+	border-right: 0.1em solid $contact-grey;
+	min-width: 15em;
+	max-width: 25em;
+}
+
 // Contact header that's underlined
 .contact-info-header{
 	color:#fff;
 }
 // Contact Logo
 #contact-logo{
-	height: 3em;
+	width: 7em;
+}
+#contact-logo img{
+	height: 4em;
 	width: 4em;
+	float: left;
 	background-color:  #333B48 ;
+}
+#logo-p{
+	font-size: 2em;
+	margin-left:3em;
 }
 // Blue circle behind icon
 .blue-circle{
+	position: static;
 	height: 5em;
 	width: 5em;
 	border-radius: 3em;
 	background-color: $blue-accent;
 	float: left;
+	margin-right: 1em;
+	margin-left: 1em;
+	text-align: center;
 	i{
-		float: left;
+		font-size: 1.5em;
+		color: #fff;
+		text-align: center;
+		margin-top: 1em;
+	}
+}
+.contact-info-p{
+	display: block;
+
+	font-size: 1em;
+    height: 6em;
+}
+#contact-email{
+	border: none;
+}
+// ------------------ Media Queries -------------------
+// Medium Screen
+@media screen  and (max-width: 63.9375em) {
+	.blue-circle{
+		margin-right: 2em;
+	}
+	div#contact-email.column.contact-info{
+		margin-top: -3em !important;
+	}
+}
+
+ // Small Screen
+@media screen and (max-width: 39.9375em)  {
+	.contact-info{
+		border-right: none;
+		margin-left: 0em;
+	}
+	.blue-circle{
+		margin-right: 2em;
+
+	}
+
+	div#contact-email.column.contact-info{
+		margin-top: 0 !important;
+	}
+
+}
+
+// Footer styles
+#footer{
+	height: 5em;
+	padding-top: .5em;
+	background-color: #212832;
+	text-align: center;
+	color: #fff;
+
+	a{
+		color:#FFAB31;
 		}
+
 }
