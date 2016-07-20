@@ -18,7 +18,8 @@ $topBtnBG: #333B48;
 	background-color: #5EBDEB;
 
 }
-// Top Bar 
+
+// Top Bar
 .top-bar{
 	height: 6em;
 	padding-right: 5em;
@@ -42,7 +43,7 @@ $topBtnBG: #333B48;
 .menu-btn{
 	background-color: $topBtnBG;
 	@include button-mixin;
-	
+
 }
 // active button styling
 .menu-btn.active,
@@ -62,7 +63,7 @@ $topBtnBG: #333B48;
 
 	.top-bar{
 		width: 20em;
-		height: 0;	
+		height: 0;
 	}
 
 	#top-menu{
@@ -80,10 +81,10 @@ $topBtnBG: #333B48;
 		margin-right: 0;
 		padding-top: 1.5em;
 		padding-bottom: 1.5em;
-		
+
 
 	}
-	
+
 	// button styling
 	.medium.button,
 	.medium.button.active,
@@ -95,7 +96,7 @@ $topBtnBG: #333B48;
 
 // Small Screen
 @media screen and (max-width: 39.9375em)  {
-	
+
 	.title-bar{
 		height: 3em;
 	}
