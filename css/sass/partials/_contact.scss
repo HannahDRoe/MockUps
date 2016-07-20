@@ -39,6 +39,11 @@ $contact-grey: #B1B1B1;
 	color: darken(#7B8896, 5%);
 	background-color: darken(#F2F2F2, 8%);
 }
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity 0.5s 0.5s ease;
+  opacity: 0;
+}
+
 // Contact Div
 #contact {
 	padding-top: 1em;
@@ -86,6 +91,11 @@ $contact-grey: #B1B1B1;
 .contact-input:focus {
 	background-color: #3E4755;
 	color: #ddd;
+	[placeholder]:focus::-webkit-input-placeholder {
+	  transition: opacity 0.5s 0.5s ease;
+	  opacity: 0;
+	}
+
 }
 //Icon Position and appearance
 .input-group-addon {
@@ -97,6 +107,7 @@ $contact-grey: #B1B1B1;
 	width: 1em;
 	height: 1em;
 }
+
 #message-textarea {
 	padding-top: 0.5em;
 	height: 9em;
@@ -166,11 +177,11 @@ $contact-grey: #B1B1B1;
 	margin-right: 1em;
 	margin-left: 1em;
 	text-align: center;
-	i{
+	span{
 		font-size: 1.5em;
 		color: #fff;
 		text-align: center;
-		margin-top: 1em;
+		margin-top: 1.2em;
 	}
 }
 .contact-info-p{
@@ -212,8 +223,8 @@ $contact-grey: #B1B1B1;
 
 // Footer styles
 #footer{
-	height: 5em;
-	padding-top: .5em;
+	height: 3em;
+	padding-top: 1em;
 	background-color: #212832;
 	text-align: center;
 	color: #fff;
