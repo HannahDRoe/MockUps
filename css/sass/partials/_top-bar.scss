@@ -18,14 +18,14 @@ $topBtnBG: #333B48;
 	background-color: #5EBDEB;
 
 }
-
+.sticky{
+    z-index: 10000;
+}
 // Top Bar
 .top-bar{
 	height: 6em;
 	padding-right: 5em;
 	background-color: $topBtnBG;
-	position:absolute;
-	z-index: 10000;
 	width: 100%;
 
 }
@@ -46,7 +46,7 @@ $topBtnBG: #333B48;
 
 }
 // active button styling
-.menu-btn.active,
+.active,
 .button:hover{
 	@include active-button;
 }

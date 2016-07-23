@@ -2,10 +2,11 @@
 html {
   height: 100%;
   min-height: 100%;
-  outline: none; }
+  outline: none;
+  margin-bottom: 0; }
 
 body {
-  height: inherit;
+  height: 100%;
   width: inherit;
   margin: 0;
   padding: 0;
@@ -2230,12 +2231,13 @@ body {
 .no-js .title-bar {
   display: none; }
 
+.sticky {
+  z-index: 10000; }
+
 .top-bar {
   height: 6em;
   padding-right: 5em;
   background-color: #333B48;
-  position: absolute;
-  z-index: 10000;
   width: 100%; }
 
 .menu, .title-bar {
@@ -2254,7 +2256,7 @@ body {
   border-radius: .25em;
   z-index: 999; }
 
-.menu-btn.active,
+.active,
 .button:hover {
   background-color: #5EBDEB; }
 
