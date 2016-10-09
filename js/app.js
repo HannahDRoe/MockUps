@@ -1,4 +1,4 @@
-$(document).foundation();
+
 $('.work-btns').click(function(event) {
 	event.preventDefault();
 	$('.work-btns').removeClass('selected');

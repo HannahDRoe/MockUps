@@ -29,13 +29,13 @@ body {
 .grey-header-p {
   font-size: .85em;
   margin-top: 1.5em;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
   text-align: center; }
 
 .white-header-p {
   font-size: .85em;
   margin-top: 1.5em;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
   text-align: center;
   color: #fff; }
 
@@ -2794,7 +2794,7 @@ div.team-img-div.slick-list {
 #blog-header-p {
   font-size: .85em;
   margin-top: 1.5em;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
   text-align: center;
   color: #fff; }
 
