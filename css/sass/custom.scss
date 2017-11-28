@@ -9,7 +9,7 @@ body{
     height: 100%;
     width: inherit;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     outline: none;
 	font-family: 'Open Sans', sans-serif;
 	color: #61666D;
@@ -44,8 +44,6 @@ body{
 	color: #fff;
 }
 
-@import "compass";
-@import "../font-awesome-4.6.3/scss/font-awesome.scss";
 @import 'partials/_top-bar';
 @import 'partials/_slider.scss';
 @import 'partials/_about-recent.scss';
