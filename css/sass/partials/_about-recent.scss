@@ -1,6 +1,3 @@
-// Variables
-@import '_variables';
-
 
 // About cotainer
 #about{
@@ -21,18 +18,25 @@
 
 // About container: holds squares
 #about-container{
-	margin-top: 2em;
-	margin-bottom: 2em;
+	margin: 20px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	
 }
+
 .about-squares{
-	border: .15em solid #E1E1E1;
-	margin-bottom: 2em;
+	border: 2px solid #E1E1E1;
+	margin: 0 15px 20px 15px;
+	padding: 20px;
+
 
 }
 // Icons position and size
 .about-img{
-	width: 12em;
-  	height: 12em;
+	width: 200px;
+  	height: 200px;
 	margin-top: 1em;
 }
 // Descriptions
@@ -44,13 +48,49 @@
 // -------------------------- About Section Media Queries-------------
 
 // Medium Screen
-@media screen  and (max-width: 63.9375em) {
-
-
+@media screen and (max-width: 1020px) {
+	
+	.about-squares{
+		margin: 0 15px 20px 15px;
+		padding: 10px;
+		height: 200px;
+	
+	}
+	// Icons position and size
+	.about-img{
+		width: 100px;
+		height: 100px;
+		margin-top: 1em;
+	}
+	// Descriptions
+	.about-p{
+		font-size: 16px;
+		margin: 10px auto;
+		width: 125px;
+	}
  }
 
 // Small Screen
-@media screen and (max-width: 39.9375em)  {
+@media screen and (max-width: 768px)  {
+	
+	.about-squares{
+		margin: 0 5px 10px 5px;
+		padding: 5px;
+		height: 200px;
+	
+	}
+	// Icons position and size
+	.about-img{
+		width: 100px;
+		height: 100px;
+		margin-top: 1em;
+	}
+	// Descriptions
+	.about-p{
+		font-size: 16px;
+		margin: 10px auto;
+		width: 125px;
+	}
 }
 
 // -------------------------- Recent Projects section --------------
@@ -78,24 +118,18 @@
 	display: block;
 	margin-left: auto;
     margin-right: auto;
-    height: 35em;
-    width: 45em;
 }
 
 // -------------------------------- Recent Projects Media Queries-------------
 // Medium Screen
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-	#recent-img{
-		height: 25em;
-    	width: 30em;
-	}
+@media screen and (max-width: 768) {
 }
 
-// Small Screen
-@media screen and (max-width: 39.9375em)  {
-	#recent-img{
-		height: 20em;
-    	width: 25em;
-	}
+// // Small Screen
+// @media screen and (max-width: 768px) {
+// 	#recent-img{
+// 		height: 20em;
+//     	width: 25em;
+// 	}
 
-}
+// }
