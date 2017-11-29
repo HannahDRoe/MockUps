@@ -1,44 +1,9 @@
-// Blue accent across whole page and Plan 2 color
-$blue-accent: #1DA1E1;
+// Variables
+@import '_variables';
+
 $plan-1-color: #9FA6AE;
 $plan-3-color: #EB758B;
 $plan-4-color: #C183D6;
-@mixin blue-header($width) {
-    margin-top: 2em;
-    width: $width;
-    border: 2px solid $blue-accent;
-    border-radius: 0.15em;
-    color: $blue-accent;
-    letter-spacing: 0.2em;
-    font-weight: 600;
-    text-align: center;
-}
-@mixin span-settings-blue {
-    content: "";
-    position: absolute;
-    height: 5px;
-    margin-top: 0.5em;
-    border-bottom: 3px solid $blue-accent;
-    top: 0;
-    width: 1.5em;
-}
-// Header Paragraphs
-@mixin header-p {
-    font-size: 0.85em;
-    margin-top: 1.5em;
-    margin-bottom: 2em;
-    text-align: center;
-}
-// Grey Buttons
-@mixin grey-button {
-    margin-top: 1.25em;
-    margin-right: 0.2em;
-    outline: none;
-    border-radius: 0.25em;
-    font-weight: bold;
-    color: darken(#7B8896, 5%);
-    background-color: darken(#F2F2F2, 8%);
-}
 // Plans container
 #our-plans {
     margin-top: 2em;

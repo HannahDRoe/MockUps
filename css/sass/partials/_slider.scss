@@ -1,20 +1,23 @@
+// Variables
+@import '_variables';
 
 // Slider container
 #content{
 	margin: 0;
     padding: 0em;
     width: 100%;
-    height: 42em;
     background-color: #333B48;
 }
 
 div.slick-slide{
-	height: 25em;
 	width: 100%;
-	padding-top: 9em;
+	padding-top: 100px;
 	text-align: center;
 	margin: 0;
 	outline: none;
+}
+.top-slider.slick-initialized.slick-slider.slick-dotted, .slick-list, .slides.slick-slide.slick-current.slick-active , .slick-track{
+	height: 400px;
 }
 
 // Next Button
@@ -56,14 +59,14 @@ div.slick-slide{
 #slide1{
 	background: url('../img/top-slides/mount1.jpeg')no-repeat center;
 	background-size: cover;
+	height: 400px;
 }
 #slide1-contents{
-	padding-top: 10em;
 	color: #fff;
 }
 
 .slide1-btn{
-	background-color: $topBtnBG;
+	background-color: $topNavColor;
 }
 button.slide1-btn.medium.button{
 		height: 3em !important;

@@ -1,48 +1,6 @@
 // Variables
-$blue-accent: #1DA1E1;
+@import '_variables';
 
-// Blue Header
-@mixin blue-header($width){
-		margin-top: 2em;
-		width: $width;
-		border: 2px solid $blue-accent;
-		border-radius: .15em;
-		color: $blue-accent;
-		letter-spacing: .2em;
-		font-weight: 600;
-		text-align: center;
-}
-// White Header
-@mixin white-header($width){
-		margin-top: 2em;
-		width: $width;
-		border: 2px solid #fff;
-		border-radius: .15em;
-		color: #fff;
-		letter-spacing: .2em;
-		font-weight: 600;
-		text-align: center;
-}
-// Blue span Lines
-@mixin span-settings-blue{
-		content: "";
-		position: absolute;
-	  	height: 5px;
-	  	margin-top: .5em;
-	  	border-bottom: 3px solid $blue-accent;
-	  	top: 0;
-	  	width: 1.5em;
-}
-// White Span Lines
-@mixin span-settings-white{
-		content: "";
-		position: absolute;
-	  	height: 5px;
-	  	margin-top: .5em;
-	  	border-bottom: 3px solid #fff;
-	  	top: 0;
-	  	width: 1.5em;
-}
 
 // About cotainer
 #about{

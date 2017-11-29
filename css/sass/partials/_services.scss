@@ -1,30 +1,8 @@
-$blue-accent: #1DA1E1;
-@mixin blue-header($width){
-    margin-top: 2em;
-    width: $width;
-    border: 2px solid $blue-accent;
-    border-radius: .15em;
-    color: $blue-accent;
-    letter-spacing: .2em;
-    font-weight: 600;
-    text-align: center;
-}
-@mixin span-settings-blue{
-    content: "";
-    position: absolute;
-      height: 5px;
-      margin-top: .5em;
-      border-bottom: 3px solid $blue-accent;
-      top: 0;
-      width: 1.5em;
-}
-// Header Paragraphs
-@mixin header-p{
-  font-size: .85em;
-  margin-top: 1.5em;
-  margin-bottom: 2em;
-  text-align: center;
-}
+// Variables
+@import '_variables';
+
+
+// TO DO: FIX THE SERVICE CIRLES... CAN BE CONDENCED INTO A CLASS NAME 
 @mixin service-circles{
 	position: static;
 	float: left;

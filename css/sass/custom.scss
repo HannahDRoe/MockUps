@@ -43,13 +43,12 @@ body{
 	@include header-p;
 	color: #fff;
 }
-
 @import 'partials/_top-bar';
-@import 'partials/_slider.scss';
-@import 'partials/_about-recent.scss';
-@import 'partials/_teams.scss';
-@import 'partials/_see-our-work.scss';
-@import 'partials/_services.scss';
-@import 'partials/_our-blog.scss';
-@import 'partials/_our-plans.scss';
-@import 'partials/_contact.scss';
+@import 'partials/_slider';
+@import 'partials/_about-recent';
+@import 'partials/_teams';
+@import 'partials/_see-our-work';
+@import 'partials/_services';
+@import 'partials/_our-blog';
+@import 'partials/_our-plans';
+@import 'partials/_contact-footer';
