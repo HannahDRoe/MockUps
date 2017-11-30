@@ -22,14 +22,14 @@
 
 <body>
     <div data-sticky-container>
-        <div class="sticky" data-sticky data-margin-top="0"  data-bar-offset="200">
-            <nav activeClass="active" >
+        <div class="sticky" data-magellan data-offset="50">
+            <nav activeClass="active"  >
                 <div class="title-bar" data-responsive-toggle="top-menu" data-hide-for="medium">
                     <button class="menu-icon" type="button" data-toggle="top-menu"></button>
                     <div class="title-bar-title" id='title'>Company Name!</div>
                 </div>
                 <!-- Tob bar -->
-                <div class="top-bar" id="top-menu" role="navigation" data-magellan>
+                <div class="top-bar" id="top-menu" role="navigation">
                     <div class="top-bar-left">
                         <div id='logo'>
                             <img src="https://s3-us-west-2.amazonaws.com/imgweather/windy.svg" alt="Company Logo">
@@ -59,7 +59,7 @@
     <div id="content" data-magellan-target="content" >
         <div class="top-slider">
             <div class="slides" id="slide1">
-                <div id="slide1-contents" data-magellan>
+                <div id="slide1-contents" >
                     <h3>I make some pretty nice pages</P></h3>
                     <p class="white-header-p"><em>a small little header</em></p>
                     <a href="#our-plans">
@@ -234,30 +234,30 @@
                 </div>
             </div>
             <!-- Works Block Grid -->
-            <div id="work-img-div" class="row small-up-2 medium-up-3 large-up-3">
+            <div id="work-img-container">
                 <!-- Donut1 -->
-                <div class="column">
-                    <a href=""> <img class="work-img" src="css/img/works/donut1.jpg" alt="Image of Donut 1" ></a>
+                <div class="work-img-div">
+                   <img class="work-img" src="css/img/works/donut1.jpg" alt="Image of Donut 1" >
                 </div>
                 <!-- Donut 2 -->
-                <div class="column">
-                    <a href=""> <img class="work-img" alt="Image of Donut 2" src="css/img/works/donut2.jpg"></a>
+                <div class="work-img-div">
+                    <img class="work-img" alt="Image of Donut 2" src="css/img/works/donut2.jpg">
                 </div>
                 <!-- Donut 3 -->
-                <div class="column">
-                    <a href=""> <img class="work-img" alt="Image of Donut 3" src="css/img/works/donut3.jpg"></a>
+                <div class="work-img-div">
+                    <img class="work-img" alt="Image of Donut 3" src="css/img/works/donut3.jpg">
                 </div>
                 <!-- Donut 4 -->
-                <div class="column">
-                    <a href=""> <img class="work-img" alt="Donut 4" src="css/img/works/donut4.jpg"></a>
+                <div class="work-img-div">
+                    <img class="work-img" alt="Donut 4" src="css/img/works/donut4.jpg">
                 </div>
                 <!-- Donut 5 -->
-                <div class="column">
-                    <a href=""> <img class="work-img" alt="Donut 5" src="css/img/works/donut5.jpg"></a>
+                <div class="work-img-div">
+                    <img class="work-img" alt="Donut 5" src="css/img/works/donut5.jpg">
                 </div>
                 <!-- Donut 6 -->
-                <div class="column">
-                    <a href=""> <img class="work-img" alt="Donut 6" src="css/img/works/donut6.jpg"></a>
+                <div class="work-img-div">
+                    <img class="work-img" alt="Donut 6" src="css/img/works/donut6.jpg">
                 </div>
             </div>
             <!-- end work row -->
@@ -275,47 +275,47 @@
             </div>
             <!-- End Header -->
             <!-- iPhone image and service Block Grid -->
-            <div id="service-container" class="row">
+            <div id="service-container">
                 <!-- iPhone image -->
-                <div id="iphone-side" class=" large-3 columns large-centered">
+                <div id="iphone-side">
                     <img id="iphone-img" src="css/img/iphone.svg" alt="Image of Our website on an iPhone">
                 </div>
                 <!-- Service Block Grid -->
-                <div id="service-blocks" class="row small-12 medium-12 large-9 small-centered medium-centered columns ">
-                    <div id="block-grid" class="small-up-1 medium-up-2 large-up-2 ">
+                <div id="service-blocks">
+                    <div id="block-grid">
                         <!--  Modern Design Trends -->
-                        <div class="column">
-                            <img id="trends" src="css/img/service-icons/trends.svg" alt="Decorative image for Modern Design Trends ">
+                        <div class="service-circles">
+                            <img class="service-img" src="css/img/service-icons/trends.svg" alt="Decorative image for Modern Design Trends ">
                             <p class="service-titles">Modern Design Trends</p>
                             <p class="service-descp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut aliqua.</p>
                         </div>
                         <!--  Responsive Design -->
-                        <div class="column">
-                            <img id="responsive" src="css/img/service-icons/responsive.svg" alt="Decorative image for Responsive Design">
+                        <div class="service-circles">
+                            <img class="service-img" src="css/img/service-icons/responsive.svg" alt="Decorative image for Responsive Design">
                             <p class="service-titles">Responsive Design</p>
                             <p class="service-descp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut aliqua.</p>
                         </div>
                         <!-- Easy to Customize -->
-                        <div class="column">
-                            <img id="ez-customize" src="css/img/service-icons/customize.svg" alt="Decorative image for Easy to Customize">
+                        <div class="service-circles">
+                            <img class="service-img" src="css/img/service-icons/customize.svg" alt="Decorative image for Easy to Customize">
                             <p class="service-titles">Easy to Customize</p>
                             <p class="service-descp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut aliqua.</p>
                         </div>
                         <!-- Multi Layouts -->
-                        <div class="column">
-                            <img id="multi-layouts" src="css/img/service-icons/layouts.svg" alt="Decorative image for Multi Layouts">
+                        <div class="service-circles">
+                            <img class="service-img" src="css/img/service-icons/layouts.svg" alt="Decorative image for Multi Layouts">
                             <p class="service-titles">Multi Layouts</p>
                             <p class="service-descp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore aliqua.</p>
                         </div>
                         <!-- Retina Ready -->
-                        <div class="column">
-                            <img id="retina" src="css/img/service-icons/retina.svg" alt="Decorative image for Retina Ready">
+                        <div class="service-circles">
+                            <img class="service-img" src="css/img/service-icons/retina.svg" alt="Decorative image for Retina Ready">
                             <p class="service-titles">Retina Ready</p>
                             <p class="service-descp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut aliqua.</p>
                         </div>
                         <!--  Online support img -->
-                        <div class="column">
-                            <img id="support" src="css/img/service-icons/support.svg" alt="Decorative image for Online Support">
+                        <div class="service-circles">
+                            <img class="service-img" src="css/img/service-icons/support.svg" alt="Decorative image for Online Support">
                             <p class="service-titles">24/7 Online Support</p>
                             <p class="service-descp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut aliqua.</p>
                         </div>

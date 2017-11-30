@@ -4,7 +4,9 @@
 }
 
 .sticky{
-    z-index: 10000;
+	z-index: 10000;
+	position: fixed;
+	width: 100%;
 }
 // Top Bar
 .top-bar{

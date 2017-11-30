@@ -52,7 +52,9 @@ body {
   display: none; }
 
 .sticky {
-  z-index: 10000; }
+  z-index: 10000;
+  position: fixed;
+  width: 100%; }
 
 .top-bar {
   height: 6em;
@@ -271,13 +273,12 @@ button.slide1-btn.medium.button {
   overflow: hidden;
   width: 100%;
   background-color: #5EBDEB;
-  margin-top: 2em;
   padding: 1em; }
 
 #recent-header {
   position: relative;
   margin: 30px auto;
-  width: 13.75em;
+  width: 12.75em;
   border: 2px solid #fff;
   border-radius: 3px;
   color: #fff;
@@ -354,34 +355,29 @@ button.slide1-btn.medium.button {
 .team-img-div.slick-slide.slick-active,
 .team-img-div.slick-slide.slick-cloned,
 .team-img-div.slick-slide {
-  padding-top: 4em;
-  outline: none;
+  padding-top: 20px;
   width: 90%; }
 
-div.team-img-div.slick-list {
-  margin-right: 2em !important;
-  margin-left: 2em !important; }
-
 .team-img-div p {
-  margin-top: 1em;
+  margin-top: 20px;
   margin-bottom: 0; }
 
 .team-img-div p:last-child {
-  margin: 0; }
+  margin-top: 7px; }
 
 .fellowship {
   position: relative;
   margin: 0 auto;
-  border-radius: 9em;
-  height: 18em;
-  width: 18em;
+  border-radius: 150px;
+  height: 250px;
+  width: 250px;
   object-fit: cover; }
 
 .team-span:after {
   content: '';
   display: inline-block;
-  border-bottom: 0.2em solid #d3d3d4;
-  width: 2.25em;
+  border-bottom: 3px solid #d3d3d4;
+  width: 30px;
   text-align: center; }
 
 @media screen and (max-width: 63.9375em) {
@@ -412,7 +408,7 @@ div.team-img-div.slick-list {
 
 #work-header {
   margin: 30px auto;
-  width: 12em;
+  width: 11em;
   border: 2px solid #fff;
   border-radius: 3px;
   color: #fff;
@@ -453,23 +449,35 @@ div.team-img-div.slick-list {
   background-color: #5EBDEB;
   color: #fff; }
 
-#work-img-div {
-  margin-top: 2em; }
+#work-img-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 20px auto; }
+
+.work-img-div {
+  margin: 20px 20px 0px; }
 
 .work-img {
-  display: inline-block;
   width: 20em;
   height: 12.5em;
   margin-bottom: 1em;
   object-fit: cover; }
 
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+@media screen and (max-width: 992px) {
+  .work-img {
+    width: 15em;
+    height: 8.5em; }
+  .work-img-div {
+    margin: 10px 10px 0px; }
   .work-btns.medium.button {
     height: 3em !important;
     border-radius: .25em;
     padding-top: .95em; } }
 
-@media screen and (max-width: 39.9375em) {
+@media screen and (max-width: 768px) {
   .work-btns.medium.button {
     height: 3em !important;
     padding-top: 0em;
@@ -481,7 +489,7 @@ div.team-img-div.slick-list {
 
 #services-header {
   margin: 30px auto;
-  width: 11em;
+  width: 10em;
   border: 2px solid #1DA1E1;
   border-radius: 3px;
   color: #1DA1E1;
@@ -499,6 +507,10 @@ div.team-img-div.slick-list {
   top: 0;
   width: 1.5em; }
 
+#service-container {
+  display: flex;
+  justify-content: space-evenly; }
+
 .service-titles {
   font-size: 1.1em;
   font-weight: 600;
@@ -511,69 +523,37 @@ div.team-img-div.slick-list {
   height: 6em; }
 
 #service-blocks {
-  width: 45em;
-  float: right;
-  margin-top: 5em; }
+  width: 600px;
+  margin: 10px 0; }
 
 #iphone-side {
-  float: left;
   margin-left: 2em; }
 
 #iphone-img {
   width: 20em; }
 
-#trends {
-  position: static;
+.service-img {
   float: left;
-  margin: .5em .5em 3em .5em;
+  margin-right: 10px;
   height: 4em;
   width: 4em; }
 
-#responsive {
-  position: static;
-  float: left;
-  margin: .5em .5em 3em .5em;
-  height: 4em;
-  width: 4em; }
-
-#ez-customize {
-  position: static;
-  float: left;
-  margin: .5em .5em 3em .5em;
-  height: 4em;
-  width: 4em; }
-
-#multi-layouts {
-  position: static;
-  float: left;
-  margin: .5em .5em 3em .5em;
-  height: 4em;
-  width: 4em; }
-
-#retina {
-  position: static;
-  float: left;
-  margin: .5em .5em 3em .5em;
-  height: 4em;
-  width: 4em; }
-
-#support {
-  position: static;
-  float: left;
-  margin: .5em .5em 3em .5em;
-  height: 4em;
-  width: 4em; }
-
-@media screen and (max-width: 63.9375em) {
+@media screen and (max-width: 992px) {
   #service-blocks {
-    width: 100%;
     margin: 4em auto 0 auto; }
   #iphone-img {
     display: none; } }
 
-@media screen and (max-width: 39.9375em) {
-  #service-container {
-    width: 100%; }
+@media screen and (max-width: 768px) {
+  #services-header {
+    margin: 30px auto;
+    width: 11em;
+    border: 2px solid #1DA1E1;
+    border-radius: 3px;
+    color: #1DA1E1;
+    letter-spacing: 4px;
+    font-weight: 600;
+    text-align: center; }
   #service-blocks {
     margin-top: 1em;
     margin: 0 auto; }

@@ -100,12 +100,11 @@
 	overflow: hidden;
 	width: 100%;
 	background-color: #5EBDEB;
-	margin-top: 2em;
 	padding: 1em;
 }
 #recent-header{
 	position: relative;
-	@include white-header(13.75em);
+	@include white-header(12.75em);
 }
 
  // Recent header span lines
