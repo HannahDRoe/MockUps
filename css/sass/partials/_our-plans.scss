@@ -9,7 +9,7 @@ $plan-4-color: #C183D6;
 }
 // Plans Header
 #plans-header {
-    @include blue-header(8em);
+    @include blue-header(9em);
 }
 //Plans Header Span
 #plans-header.lined-header span:after,
@@ -21,6 +21,7 @@ $plan-4-color: #C183D6;
     border: 0.15em solid #E1E1E1;
     margin-bottom: 2em;
     text-align: center;
+    
 }
 // Plan Title
 .plan-title {
@@ -30,10 +31,17 @@ $plan-4-color: #C183D6;
     padding-top: 0.75em;
     color: #fff;
 }
+#plans-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.plan-column{
+
+}
 // Plan Details
 .plan-details {
     height: 16em;
-    padding-top: 2em;
+    padding: 10px;
     border-bottom: 0.10em solid #E1E1E1;
 }
 // Plan Details Pragraph
@@ -44,16 +52,25 @@ $plan-4-color: #C183D6;
 // Plan Price
 .price-div {
     width: 100%;
-    height: 6em;
-    border-bottom: 0.10em solid #E1E1E1;
-    margin-top: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
+    height: 100px;
+    border-bottom: 2px solid #E1E1E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    // margin-top: 0.5em;
+    // margin-left: auto;
+    // margin-right: auto;
 }
 // Plan Button Div
 .plan-btn-div {
     height: 5em;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        button{
+            margin: 0;
+        }
 }
 // Plan Button
 .plan-btn {
@@ -77,7 +94,7 @@ $plan-4-color: #C183D6;
     font-size: 3em;
     width: 2em;
     float: left;
-    margin-left: 1em;
+    // margin-left: 1em;
 }
 // Month square style and position
 @mixin plan-month {
@@ -86,77 +103,78 @@ $plan-4-color: #C183D6;
     font-size: 0.85em;
     padding: 0.25em;
     color: #fff;
-    margin-top: 2em;
-    margin-right: auto;
-    float: left;
+}
+.plan-price{
+    p{
+        font-size: 3em;
+        width: 2em;
+        float: left;
+    }
+}
+.plan-month{
+    width: 5em;
+    height: 2em;
+    font-size: 0.85em;
+    padding: 0.25em;
+    color: #fff;
+
 }
 // Plan Block 1
 #plan-1 {
-    background-color: $plan-1-color;
+    .plan-title, .plan-month{
+        background-color: $plan-1-color;
+    }
 }
-// Plan 1 Price color
-#plan-1-price {
-    @include plan-price-style;
-    color: $plan-1-color;
-}
-// Month text position and background color
-#plan-1-month {
-    @include plan-month;
-    background-color: $plan-1-color;
-}
+
 // Plan Block 2
 #plan-2 {
-    background-color: $blue-accent;
+    .plan-title, .plan-month{
+        background-color: $blue-accent;
+    }
 }
-// Plan 2 Price color
-#plan-2-price {
-    @include plan-price-style;
-}
-// Month text position and background color
-#plan-2-month {
-    @include plan-month;
-    background-color: $blue-accent;
-}
+
 // Plan Block 3
 #plan-3 {
-    background-color: $plan-3-color;
-}
-// Plan 3 Price color
-#plan-3-price {
-    @include plan-price-style;
-    color: $plan-3-color;
-}
-// Month text position and background color
-#plan-3-month {
-    @include plan-month;
-    background-color: $plan-3-color;
+    .plan-title, .plan-month{
+        background-color: $plan-3-color;
+    }
 }
 // Plan Block 4
 #plan-4 {
-    background-color: $plan-4-color;
-}
-// Plan 4 Price color
-#plan-4-price {
-    @include plan-price-style;
-    color: $plan-4-color;
-}
-// Month text position and background color
-#plan-4-month {
-    @include plan-month;
-    background-color: $plan-4-color;
-}
-
-// Medium Screen
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    // Plan price styles and position
-    #plan-1-price, #plan-2-price, #plan-3-price, #plan-4-price {
-        margin-left:30%;
+    .plan-title, .plan-month{
+        background-color: $plan-4-color;
     }
 
 }
-// Small Screen
-@media screen and (max-width: 39.9375em)  {
+
+// Medium Screen
+@media screen and (max-width: 992px) {
+    // Plan price styles and position
     #plan-1-price, #plan-2-price, #plan-3-price, #plan-4-price {
-        margin-left:33%;
+        // margin-left:30%;
+    }
+    #plans-container{
+        flex-wrap: wrap;
+    }
+    .plan-blocks{
+        margin: 5px;
+    }
+}
+// Small Screen
+@media screen and (max-width: 768px) {
+    #plan-1-price, #plan-2-price, #plan-3-price, #plan-4-price {
+        // margin-left:33%;
+    }
+}
+@media screen and (max-width: 501px) {
+    .plan-column{
+        width: 200px;
+    }
+    .plan-blocks{
+        margin: 5px;
+    }
+    .plan-details{
+        visibility: hidden;
+        height: 0;
     }
 }

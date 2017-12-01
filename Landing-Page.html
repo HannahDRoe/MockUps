@@ -330,7 +330,7 @@
             <!-- Blog Header -->
             <h3 class="lined-header small-centered medium-centered large-centered" id="blog-header"><span>OUR BLOG POSTS</span></h3>
             <div class="row">
-                <p class="small-12 medium-9 large-9 small-centered medium-centered large-centered columns " id="blog-header-p">
+                <p id="blog-header-p">
                     <em>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel varius quam. Suspendisse tincidunt velit ante, fermentum euismod lectus tincidunt at. Ut gravida viverra varius.
                     </em>
@@ -339,9 +339,9 @@
             <!-- End Header -->
             <!-- Blog Content -->
             <div id="blog-container" class="row">
-                <div class="small-up-1 medium-up-2 large-up-4">
+                <div class="blog-grid">
                     <!-- Blog Post 1 -->
-                    <div class="column blog-column">
+                    <div class="blog-column">
                         <!-- blog top img -->
                         <img class="blog-img" src="css/img/blog-post/blog-img1.png" alt="">
                         <!-- blog text div -->
@@ -349,10 +349,14 @@
                             <p class="blog-info-header">Sample text image blogs...</p>
                             <!-- author and comments line -->
                             <div class="avatar-comments">
-                                <img src="css/img/blog-post/avatar.svg" class="avatar-icon" alt="">
-                                <p class="blog-author">Author</p>
-                                <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon" alt="">
-                                <p class="comments">12 Comments</p>
+                                <div> 
+                                    <img src="css/img/blog-post/avatar.svg" class="avatar-icon" alt="">
+                                    <p class="blog-author">Author</p>
+                                </div>
+                                <div>
+                                    <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon" alt="">
+                                    <p class="comments">12 Comments</p>
+                                </div>
                             </div>
                             <p class="blog-info-p">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         </div>
@@ -364,16 +368,20 @@
                         <!-- End Blog date bar  -->
                     </div>
                     <!-- Blog Post 2 -->
-                    <div class="column blog-column">
+                    <div class="blog-column">
                         <!-- blog text div -->
                         <div class="blog-info-block">
                             <p class="blog-info-header">Sample text image blogs...</p>
                             <!-- author and comments line -->
                             <div class="avatar-comments">
-                                <img src="css/img/blog-post/avatar.svg" class="avatar-icon" alt="">
-                                <p class="blog-author">Author</p>
-                                <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon" alt="">
-                                <p class="comments">12 Comments</p>
+                                <div>
+                                    <img src="css/img/blog-post/avatar.svg" class="avatar-icon" alt="">
+                                    <p class="blog-author">Author</p>
+                                </div>
+                                <div>
+                                    <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon" alt="">
+                                    <p class="comments">12 Comments</p>
+                                </div>
                             </div>
                             <p class="blog-info-p">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         </div>
@@ -388,7 +396,7 @@
                         <img class="blog-img" src="css/img/blog-post/blog-img2.png" alt="">
                     </div>
                     <!-- Blog Post 3 -->
-                    <div class="column blog-column">
+                    <div class="blog-column">
                         <!-- blog top img -->
                         <img class="blog-img" src="css/img/blog-post/blog-img3.png" alt="">
                         <!-- blog text div -->
@@ -396,10 +404,14 @@
                             <p class="blog-info-header">Sample text image blogs...</p>
                             <!-- author and comments line -->
                             <div class="avatar-comments">
-                                <img src="css/img/blog-post/avatar.svg" class="avatar-icon" alt="">
-                                <p class="blog-author">Author</p>
-                                <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon" alt="">
-                                <p class="comments">12 Comments</p>
+                                <div>
+                                    <img src="css/img/blog-post/avatar.svg" class="avatar-icon" alt="">
+                                    <p class="blog-author">Author</p>
+                                </div>
+                                <div>
+                                    <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon" alt="">
+                                    <p class="comments">12 Comments</p>
+                                </div>
                             </div>
                             <p class="blog-info-p">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         </div>
@@ -411,16 +423,20 @@
                         <!-- End Blog date bar  -->
                     </div>
                     <!-- Blog Post 4 -->
-                    <div class="column blog-column">
+                    <div class="blog-column">
                         <!-- blog text div -->
                         <div class="blog-info-block">
                             <p class="blog-info-header">Sample text image blogs...</p>
                             <!-- author and comments line -->
                             <div class="avatar-comments">
-                                <img src="css/img/blog-post/avatar.svg" class="avatar-icon"  alt="">
-                                <p class="blog-author">Author</p>
-                                <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon" alt="">
-                                <p class="comments">12 Comments</p>
+                                <div>
+                                    <img src="css/img/blog-post/avatar.svg" class="avatar-icon"  alt="">
+                                    <p class="blog-author">Author</p>        
+                                </div>
+                                <div>
+                                    <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon" alt="">
+                                    <p class="comments">12 Comments</p>
+                                </div>
                             </div>
                             <p class="blog-info-p">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         </div>
@@ -432,8 +448,10 @@
                         <!-- blog top img -->
                         <img class="blog-img" src="css/img/blog-post/blog-img1.png" alt="">
                     </div>
+                </div>
+                <div class="blog-grid hide-me hide">
                     <!-- Blog Post 5 -->
-                    <div class="column blog-column hide-me hide">
+                    <div class="blog-column hide-me hide">
                         <!-- blog top img -->
                         <img class="blog-img" src="css/img/blog-post/blog-img2.png" alt="">
                         <!-- blog text div -->
@@ -441,10 +459,14 @@
                             <p class="blog-info-header">Sample text image blogs...</p>
                             <!-- author and comments line -->
                             <div class="avatar-comments">
-                                <img src="css/img/blog-post/avatar.svg" class="avatar-icon" alt="">
-                                <p class="blog-author">Author</p>
-                                <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon" alt="">
-                                <p class="comments">12 Comments</p>
+                                <div>
+                                    <img src="css/img/blog-post/avatar.svg" class="avatar-icon" alt="">
+                                    <p class="blog-author">Author</p>        
+                                </div>
+                                <div>
+                                    <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon" alt="">
+                                    <p class="comments">12 Comments</p>
+                                </div>
                             </div>
                             <p class="blog-info-p">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         </div>
@@ -457,16 +479,20 @@
 
                     </div>
                     <!-- Blog Post 6 -->
-                    <div class="column blog-column hide-me hide">
+                    <div class="blog-column hide-me hide">
                         <!-- blog text div -->
                         <div class="blog-info-block">
                             <p class="blog-info-header">Sample text image blogs...</p>
                             <!-- author and comments line -->
                             <div class="avatar-comments">
-                                <img src="css/img/blog-post/avatar.svg" class="avatar-icon" alt="">
-                                <p class="blog-author">Author</p>
-                                <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon" alt="">
-                                <p class="comments">12 Comments</p>
+                                <div>
+                                    <img src="css/img/blog-post/avatar.svg" class="avatar-icon" alt="">
+                                    <p class="blog-author">Author</p>
+                                </div>
+                                <div>
+                                        <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon" alt="">
+                                        <p class="comments">12 Comments</p>        
+                                </div>
                             </div>
                             <p class="blog-info-p">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         </div>
@@ -479,7 +505,7 @@
                         <img class="blog-img" src="css/img/blog-post/blog-img3.png" alt="Generic Blog Post image" alt="">
                     </div>
                     <!-- Blog Post 7 -->
-                    <div class="column blog-column hide-me hide">
+                    <div class="blog-column hide-me hide">
                         <!-- blog top img -->
                         <img class="blog-img" src="css/img/blog-post/blog-img1.png" alt="">
                         <!-- blog text div -->
@@ -487,10 +513,14 @@
                             <p class="blog-info-header">Sample text image blogs...</p>
                             <!-- author and comments line -->
                             <div class="avatar-comments">
-                                <img src="css/img/blog-post/avatar.svg" class="avatar-icon" alt="">
-                                <p class="blog-author">Author</p>
-                                <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon" alt="">
-                                <p class="comments">12 Comments</p>
+                                <div>
+                                    <img src="css/img/blog-post/avatar.svg" class="avatar-icon" alt="">
+                                    <p class="blog-author">Author</p>        
+                                </div>
+                                <div>
+                                    <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon" alt="">
+                                    <p class="comments">12 Comments</p>
+                                </div>
                             </div>
                             <p class="blog-info-p">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         </div>
@@ -501,16 +531,20 @@
                         </div>
                     </div>
                     <!-- Blog Post 8 -->
-                    <div class="column blog-column hide-me hide">
+                    <div class="blog-column hide-me hide">
                         <!-- blog text div -->
                         <div class="blog-info-block">
                             <p class="blog-info-header">Sample text image blogs...</p>
                             <!-- author and comments line -->
                             <div class="avatar-comments">
-                                <img src="css/img/blog-post/avatar.svg" class="avatar-icon" alt="">
-                                <p class="blog-author">Author</p>
-                                <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon" alt="">
-                                <p class="comments">12 Comments</p>
+                                <div>
+                                    <img src="css/img/blog-post/avatar.svg" class="avatar-icon" alt="">
+                                    <p class="blog-author">Author</p>
+                                </div>
+                                <div>
+                                    <img src="css/img/blog-post/speech-bubble.svg" class="comment-icon" alt="">
+                                    <p class="comments">12 Comments</p>
+                                </div>
                             </div>
                             <p class="blog-info-p">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         </div>
@@ -523,11 +557,13 @@
                         <!-- blog top img -->
                         <img class="blog-img" src="css/img/blog-post/blog-img3.png" alt="">
                     </div>
-                    <!-- End blog container -->
-                    <div id="load-btn-div">
-                        <button type="button" name="button" role="button" class="secondary button" id="load-btn">Load More...</button>
-                    </div>
                 </div>
+                    <!-- End blog container -->
+            </div>
+            <div id="load-btn-div">
+                <button type="button" name="button" role="button" class="secondary button" id="load-btn">Load More...</button>
+            </div>
+
             </div>
         </section>
         <!-- End Our Blog Posts -->
@@ -542,146 +578,142 @@
                 </p>
             </div>
             <!-- End Header -->
-            <div id="plans-container" class="row">
-                <div class="small-up-1 medium-up-2 large-up-4">
-                    <!-- Plan 1 -->
-                    <div class="column">
-                        <div class="plan-blocks">
-                            <div class="plan-title" id="plan-1">
-                                <p>Basic Plan</p>
-                            </div>
-                            <div class="plan-details">
+            <div id="plans-container">
+                <!-- Plan 1 -->
+                <div id="plan-1" class="plan-column">
+                    <div class="plan-blocks">
+                        <div class="plan-title">
+                            <p>Basic Plan</p>
+                        </div>
+                        <div class="plan-details">
+                            <p>
+                                1 Months Time Duration
+                                <br> Unlimited Template download
+                                <br> Unlimited Extension download
+                                <br> 05 Domain License
+                                <br> Free Setup
+                            </p>
+                        </div>
+                        <div  class="price-div">
+                            <div class="plan-price">
                                 <p>
-                                    1 Months Time Duration
-                                    <br> Unlimited Template download
-                                    <br> Unlimited Extension download
-                                    <br> 05 Domain License
-                                    <br> Free Setup
+                                    $10
                                 </p>
                             </div>
-                            <div class="price-div">
-                                <div id="plan-1-price">
-                                    <p>
-                                        $10
-                                    </p>
-                                </div>
-                                <div id="plan-1-month">
-                                    <p>
-                                        /MONTH
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="plan-btn-div">
-                                <button type="button" name="button" class="plan-btn button">Get Started Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Plan 1 -->
-                    <!-- Plan 2 -->
-                    <div class="column">
-                        <div class="plan-blocks plan-selected">
-                            <div class="plan-title" id="plan-2">
-                                <p>Basic Plan</p>
-                            </div>
-                            <div class="plan-details">
+                            <div class="plan-month">
                                 <p>
-                                    1 Months Time Duration
-                                    <br> Unlimited Template download
-                                    <br> Unlimited Extension download
-                                    <br> 05 Domain License
-                                    <br> Free Setup
+                                    /MONTH
                                 </p>
                             </div>
-                            <div class="price-div">
-                                <div id="plan-2-price">
-                                    <p>
-                                        $10
-                                    </p>
-                                </div>
-                                <div id="plan-2-month">
-                                    <p>
-                                        /MONTH
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="plan-btn-div">
-                                <button type="button" name="button" class="plan-btn plan-selected-btn button">Get Started Now</button>
-                            </div>
+                        </div>
+                        <div class="plan-btn-div">
+                            <button type="button" name="button" class="plan-btn button">Get Started Now</button>
                         </div>
                     </div>
-                    <!-- End Plan 2 -->
-                    <!-- Plan 3 -->
-                    <div class="column">
-                        <div class="plan-blocks">
-                            <div class="plan-title" id="plan-3">
-                                <p>Basic Plan</p>
-                            </div>
-                            <div class="plan-details">
-                                <p>
-                                    1 Months Time Duration
-                                    <br> Unlimited Template download
-                                    <br> Unlimited Extension download
-                                    <br> 05 Domain License
-                                    <br> Free Setup
-                                </p>
-                            </div>
-                            <div class="price-div">
-                                <div id="plan-3-price">
-                                    <p>
-                                        $10
-                                    </p>
-                                </div>
-                                <div id="plan-3-month">
-                                    <p>
-                                        /MONTH
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- closes price div -->
-                            <div class="plan-btn-div">
-                                <button type="button" name="button" class=" plan-btn button">Get Started Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Plan 3 -->
-                    <!-- Plan 4 -->
-                    <div class="column">
-                        <div class="plan-blocks">
-                            <div class="plan-title" id="plan-4">
-                                <p>Basic Plan</p>
-                            </div>
-                            <div class="plan-details">
-                                <p>
-                                    1 Months Time Duration
-                                    <br> Unlimited Template download
-                                    <br> Unlimited Extension download
-                                    <br> 05 Domain License
-                                    <br> Free Setup
-                                </p>
-                            </div>
-                            <div class="price-div">
-
-                                <div id="plan-4-price">
-                                    <p>
-                                        $10
-                                    </p>
-                                </div>
-                                <div id="plan-4-month">
-                                    <p>
-                                        /MONTH
-                                    </p>
-                                </div>
-
-                            </div>
-                            <div class="plan-btn-div">
-                                <button type="button" name="button" class=" plan-btn button">Get Started Now</button>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Plan 4 -->
-
                 </div>
+                <!-- End Plan 1 -->
+                <!-- Plan 2 -->
+                <div id="plan-2" class="plan-column">
+                    <div class="plan-blocks plan-selected">
+                        <div class="plan-title">
+                            <p>Basic Plan</p>
+                        </div>
+                        <div class="plan-details">
+                            <p>
+                                1 Months Time Duration
+                                <br> Unlimited Template download
+                                <br> Unlimited Extension download
+                                <br> 05 Domain License
+                                <br> Free Setup
+                            </p>
+                        </div>
+                        <div class="price-div">
+                            <div class="plan-price">
+                                <p>
+                                    $10
+                                </p>
+                            </div>
+                            <div class="plan-month">
+                                <p>
+                                    /MONTH
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plan-btn-div">
+                            <button type="button" name="button" class="plan-btn plan-selected-btn button">Get Started Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Plan 2 -->
+                <!-- Plan 3 -->
+                <div id="plan-3" class="plan-column">
+                    <div class="plan-blocks">
+                        <div class="plan-title">
+                            <p>Basic Plan</p>
+                        </div>
+                        <div class="plan-details">
+                            <p>
+                                1 Months Time Duration
+                                <br> Unlimited Template download
+                                <br> Unlimited Extension download
+                                <br> 05 Domain License
+                                <br> Free Setup
+                            </p>
+                        </div>
+                        <div class="price-div">
+                            <div class="plan-price">
+                                <p>
+                                    $10
+                                </p>
+                            </div>
+                            <div class="plan-month">
+                                <p>
+                                    /MONTH
+                                </p>
+                            </div>
+                        </div>
+                        <!-- closes price div -->
+                        <div class="plan-btn-div">
+                            <button type="button" name="button" class=" plan-btn button">Get Started Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Plan 3 -->
+                <!-- Plan 4 -->
+                <div id="plan-4" class="plan-column">
+                    <div class="plan-blocks">
+                        <div class="plan-title">
+                            <p>Basic Plan</p>
+                        </div>
+                        <div class="plan-details">
+                            <p>
+                                1 Months Time Duration
+                                <br> Unlimited Template download
+                                <br> Unlimited Extension download
+                                <br> 05 Domain License
+                                <br> Free Setup
+                            </p>
+                        </div>
+                        <div class="price-div">
+                            <div class="plan-price">
+                                <p>
+                                    $10
+                                </p>
+                            </div>
+                            <div class="plan-month">
+                                <p>
+                                    /MONTH
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="plan-btn-div">
+                            <button type="button" name="button" class=" plan-btn button">Get Started Now</button>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- End Plan 4 -->
             </div>
         </section>
         <!-- Contact Form -->

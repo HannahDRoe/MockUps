@@ -20,10 +20,15 @@
 }
 // Blog posts container
 #blog-container{
-	width: 95%;
+	width: 100%;
+}
+.blog-grid{
+	display: flex;
+	justify-content: center;
 }
 .blog-column{
-	margin-bottom: 2em !important;
+	width: 250px;
+	margin: 20px;
 }
 
 // Blog Info div contains title, text, author and comments
@@ -39,6 +44,7 @@
 }
 // Avatar and comments div
 .avatar-comments{
+	display: flex;
 	width: 100%;
 	font-size: .85em;
 	margin-bottom: 1.2em;
@@ -48,7 +54,6 @@
 .avatar-icon, .comment-icon{
 	height: 1em;
 	width: 1em;
-	display: inline;
 }
 // Blog author
 .blog-author{
@@ -113,3 +118,24 @@
   transition:ease-in-out;
 
 }
+@media screen and (max-width: 992px) {
+	.blog-column{
+		width: 300px;
+	}
+	.blog-grid{
+		flex-wrap: wrap;
+	}
+}	
+@media screen and (max-width: 768px) {
+	.blog-column{
+		width: 42%;
+	}
+
+}
+@media screen and (max-width: 501px) {
+	.blog-column{
+		width: 100%;
+		margin: 10px;
+	}
+
+}	
