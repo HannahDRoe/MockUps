@@ -718,88 +718,92 @@
         </section>
         <!-- Contact Form -->
         <section id="contact" data-magellan-target="contact">
-            <h3 class="small-centered medium-centered large-centered lined-header" id="contact-header">
+            <h3 class="lined-header" id="contact-header">
             <span>CONTACT US</span></h3>
-            <div class="row">
-                <p class="small-12 medium-9 large-9 large-centered medium-centered columns white-header-p">
+            <div>
+                <p class=" white-header-p">
                     <em>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel varius quam. Suspendisse tincidunt velit ante, fermentum euismod lectus tincidunt at. Ut gravida viverra varius.
                     </em>
                 </p>
             </div>
-            <div id="contact-container" class="row">
-                <div class="small-12 medium-6 large-6 columns">
-                    <form id="contact-form" action="index.html" method="post" >
-                        <div class="form-group">
-                            <label for="name" hidden="hidden">Name</label>
-                            <span class="input-group-addon"><span class="fa fa-user fa-fw"></span></span>
-                            <input class="contact-input" id="name-input" type="text"  name="name" value="" placeholder="Name">
+            <div id="contact-container">
+                <form id="contact-form" action="index.html" method="post" >
+                    <div class="form-group">
+                        <label for="name" hidden="hidden">Name</label>
 
-                        </div>
-                        <div class="form-group">
-                            <label for="email" hidden="hidden">Email</label>
-                            <span class="input-group-addon"><span class="fa fa-envelope-o fa-fw"></span></span>
-                            <input class="contact-input" id="email-input" type="text" name="email" value="" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="message" hidden="hidden">Message</label>
-                            <span class="input-group-addon"><span class="fa fa-external-link fa-fw"></span></span>
-                            <textarea class="contact-input" id="message-textarea" type="t6 ext" name="name" value="Message" placeholder="Message"></textarea>
+                            <svg id="name-input-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612" width="512" height="512">
+                                <path d="M306 325.988c90.564-.005 123.148-90.682 131.68-165.167C448.188 69.06 404.8 0 306 0c-98.78 0-142.194 69.055-131.678 160.82 8.54 74.484 41.114 165.175 131.68 165.168z"/>
+                                <path d="M550.98 541.908c-.99-28.904-4.376-57.94-9.42-86.393-6.11-34.47-13.89-85.002-43.983-107.465-17.404-12.988-39.94-17.25-59.865-25.08-9.697-3.81-18.384-7.595-26.537-11.902-27.518 30.176-63.4 45.962-105.186 45.964-41.775 0-77.653-15.786-105.168-45.964-8.153 4.308-16.84 8.093-26.537 11.9-19.924 7.833-42.46 12.093-59.863 25.082-30.096 22.463-37.873 72.996-43.983 107.465-5.046 28.454-8.434 57.49-9.423 86.393-.766 22.387 10.288 25.525 29.017 32.284 23.453 8.458 47.666 14.737 72.04 19.884 47.078 9.94 95.604 17.582 143.922 17.924 48.318-.343 96.844-7.983 143.92-17.924 24.376-5.145 48.59-11.424 72.042-19.884 18.736-6.757 29.79-9.895 29.023-32.284z"/>
+                            </svg>
+                       
+                        <input class="contact-input" id="name-input" type="text"  name="name" value="" placeholder="Name">
 
-                        </div>
-                        <div class="form-group">
-                            <span id="message-icon" class="input-group-addon"><span class="fa fa-external-link fa-fw"></span></span>
-                            <button class="button" id="send-message" type="button" name="button">SEND MESSAGE</button>
-                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" hidden="hidden">Email</label>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+                            <path d="M7 9L5.268 7.484.316 11.73c.18.166.423.27.69.27h11.987c.267 0 .51-.104.688-.27L8.733 7.483 7 9z"/>
+                            <path d="M13.684 2.27c-.18-.167-.422-.27-.69-.27H1.006c-.267 0-.51.104-.69.273L7 8l6.684-5.73zM0 2.878v8.308L4.833 7.08M9.167 7.08L14 11.185v-8.31"/></svg>
+                        <input class="contact-input" id="email-input" type="text" name="email" value="" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" hidden="hidden">Message</label>
+                            <svg id="pencil" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 469.331 469.331"><path d="M438.93 30.403c-40.4-40.5-106.1-40.5-146.5 0l-268.6 268.5c-2.1 2.1-3.4 4.8-3.8 7.7l-19.9 147.4c-.6 4.2.9 8.4 3.8 11.3 2.5 2.5 6 4 9.5 4 .6 0 1.2 0 1.8-.1l88.8-12c7.4-1 12.6-7.8 11.6-15.2-1-7.4-7.8-12.6-15.2-11.6l-71.2 9.6 13.9-102.8 108.2 108.2c2.5 2.5 6 4 9.5 4s7-1.4 9.5-4l268.6-268.5c19.6-19.6 30.4-45.6 30.4-73.3s-10.8-53.7-30.4-73.2zm-141.3 33l45.1 45.1-245.1 245.1-45.1-45.1 245.1-245.1zm-136.7 353.4l-44.1-44.1 245.1-245.1 44.1 44.1-245.1 245.1zm263.9-264.4l-107.9-107.9c13.7-11.3 30.8-17.5 48.8-17.5 20.5 0 39.7 8 54.2 22.4s22.4 33.7 22.4 54.2c0 18.1-6.2 35.1-17.5 48.8z"/></svg>
+                    </span>
+                        <textarea class="contact-input" id="message-textarea" type="t6 ext" name="name" value="Message" placeholder="Message"></textarea>
 
-                    </form>
+                    </div>
+                    <div class="form-group">
+                        <span id="message-icon" class="input-group-addon"><span class="fa fa-external-link fa-fw"></span></span>
+                        <button class="button" id="send-message" type="button" name="button">SEND MESSAGE</button>
+                    </div>
+
+                </form>
+                <div id="google-map">
+                        <iframe  frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=10&center=40.7608%2C-111.8910&key=AIzaSyDEHWzHHdyvHGyrSFrjgdZTkFFRIktlfiI"></iframe>
                 </div>
-                <div class="small-12 medium-6 large-6 columns">
-                    <iframe id="google-map" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=10&center=40.7608%2C-111.8910&key=AIzaSyDEHWzHHdyvHGyrSFrjgdZTkFFRIktlfiI"></iframe>
-
-                </div>
+        
             </div>
             <!-- Row of contact info below map and form -->
-            <div id="contact-line" class="row">
-                <div id="contact-line-div" class=" small-up-1 medium-up-2 large-up-4">
-                    <!-- Logo -->
-                     <div class="column contact-info show-for-large" id="contact-logo">
-                        <img src=https://s3-us-west-2.amazonaws.com/imgweather/windy.svg alt="Logo" />
-                        <p id="logo-p">
-                            <strong>LOGO</strong>
-                        </p>
+            <div id="contact-line">
+                <!-- Logo -->
+                    <div class="contact-info" id="contact-logo">
+                    <img src=https://s3-us-west-2.amazonaws.com/imgweather/windy.svg alt="Logo" />
+                    <p id="logo-p">
+                        <strong>LOGO</strong>
+                    </p>
+                </div>
+                <!-- Address -->
+                <div class=" contact-info">
+                    <div class="contact-circle-div">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M506.555 208.064L263.86 30.367c-4.68-3.426-11.04-3.426-15.717 0L5.445 208.064c-5.928 4.34-7.216 12.665-2.875 18.593s12.666 7.214 18.593 2.875L256 57.588 490.837 229.53c2.368 1.736 5.12 2.57 7.848 2.57 4.096 0 8.138-1.884 10.744-5.444 4.34-5.927 3.053-14.25-2.875-18.592zM442.246 232.543c-7.346 0-13.303 5.956-13.303 13.303v211.75H322.52V342.008c0-36.68-29.84-66.52-66.52-66.52s-66.52 29.84-66.52 66.52v115.586H83.06v-211.75c0-7.346-5.957-13.302-13.303-13.302s-13.303 5.956-13.303 13.303V470.9c0 7.347 5.957 13.303 13.303 13.303h133.03c6.995 0 12.72-5.405 13.25-12.267.032-.31.052-.65.052-1.036V342.01c0-22.01 17.905-39.914 39.914-39.914s39.915 17.906 39.915 39.914V470.9c0 .383.02.717.052 1.024.524 6.867 6.25 12.28 13.25 12.28h133.03c7.347 0 13.303-5.957 13.303-13.304V245.847c0-7.348-5.957-13.304-13.304-13.304z"/></svg>           
                     </div>
-                    <!-- Address -->
-                    <div class="column contact-info">
-                        <div class="contact-circle-div">
-                            <span class="blue-circle"><span class="fa fa-home fa-fw"></span></span>
-                        </div>
-                        <p class="contact-info-p">
-                            <span class="contact-info-header"><u>ADDRESS:</u></span><br>
-                            123 Street-E14/E15 <br>
-                            Cambridge, USA
-                        </p>
+                    <p class="contact-info-p">
+                        <span class="contact-info-header"><u>ADDRESS:</u></span><br>
+                        123 Street-E14/E15 <br>
+                        Cambridge, USA
+                    </p>
+                </div>
+                <!-- Phone -->
+                <div class="contact-info">
+                    <div class="contact-circle-div">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.6 482.6"><path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7zm-72.6-216.6c1.2-13.3 6.3-24.4 15.9-34l37.2-37.2c5.8-5.6 12.2-8.5 18.4-8.5 6.1 0 12.3 2.9 18 8.7 6.7 6.2 13 12.7 19.8 19.6 3.4 3.5 6.9 7 10.4 10.6l29.8 29.8c6.2 6.2 9.4 12.5 9.4 18.7s-3.2 12.5-9.4 18.7c-3.1 3.1-6.2 6.3-9.3 9.4-9.3 9.4-18 18.3-27.6 26.8l-.5.5c-8.3 8.3-7 16.2-5 22.2.1.3.2.5.3.8 7.7 18.5 18.4 36.1 35.1 57.1 30 37 61.6 65.7 96.4 87.8 4.3 2.8 8.9 5 13.2 7.2 4 2 7.7 3.9 11 6 .4.2.7.4 1.1.6 3.3 1.7 6.5 2.5 9.7 2.5 8 0 13.2-5.1 14.9-6.8l37.4-37.4c5.8-5.8 12.1-8.9 18.3-8.9 7.6 0 13.8 4.7 17.7 8.9l60.3 60.2c12 12 11.9 25-.3 37.7-4.2 4.5-8.6 8.8-13.3 13.3-7 6.8-14.3 13.8-20.9 21.7-11.5 12.4-25.2 18.2-42.9 18.2-1.7 0-3.5-.1-5.2-.2-32.8-2.1-63.3-14.9-86.2-25.8-62.2-30.1-116.8-72.8-162.1-127-37.3-44.9-62.4-86.7-79-131.5-10.3-27.5-14.2-49.6-12.6-69.7z"/></svg>                 
+                               </div>
+                    <p class="contact-info-p">
+                        <span class="contact-info-header"><u>PHONE:</u></span><br>
+                        (+12)3456 7890
+                    </p>
+                </div>
+                <!-- Email -->
+                    <div id="contact-email"class=" contact-info">
+                    <div class="contact-circle-div">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.3 483.3"><path d="M424.3 57.75H59.1c-32.6 0-59.1 26.5-59.1 59.1v249.6c0 32.6 26.5 59.1 59.1 59.1h365.1c32.6 0 59.1-26.5 59.1-59.1v-249.5c.1-32.6-26.4-59.2-59-59.2zm32.1 308.7c0 17.7-14.4 32.1-32.1 32.1H59.1c-17.7 0-32.1-14.4-32.1-32.1v-249.5c0-17.7 14.4-32.1 32.1-32.1h365.1c17.7 0 32.1 14.4 32.1 32.1v249.5h.1z"/><path d="M304.8 238.55l118.2-106c5.5-5 6-13.5 1-19.1-5-5.5-13.5-6-19.1-1l-163 146.3-31.8-28.4c-.1-.1-.2-.2-.2-.3-.7-.7-1.4-1.3-2.2-1.9L78.3 112.35c-5.6-5-14.1-4.5-19.1 1.1-5 5.6-4.5 14.1 1.1 19.1l119.6 106.9-119.1 111.5c-5.4 5.1-5.7 13.6-.6 19.1 2.7 2.8 6.3 4.3 9.9 4.3 3.3 0 6.6-1.2 9.2-3.6l120.9-113.1 32.8 29.3c2.6 2.3 5.8 3.4 9 3.4s6.5-1.2 9-3.5l33.7-30.2 120.2 114.2c2.6 2.5 6 3.7 9.3 3.7 3.6 0 7.1-1.4 9.8-4.2 5.1-5.4 4.9-14-.5-19.1l-118.7-112.7z"/></svg>         
                     </div>
-                    <!-- Phone -->
-                    <div class="column contact-info">
-                        <div class="contact-circle-div">
-                            <span class="blue-circle"><span class="fa fa-phone fa-fw"></span></span>
-                        </div>
-                        <p class="contact-info-p">
-                            <span class="contact-info-header"><u>PHONE:</u></span><br>
-                            (+12)3456 7890
-                        </p>
-                    </div>
-                    <!-- Email -->
-                     <div id="contact-email"class="column contact-info">
-                        <div class="contact-circle-div">
-                            <span class="blue-circle"><span class="fa fa-envelope-o fa-fw"></span></span>
-                        </div>
-                        <p class="contact-info-p">
-                            <span class="contact-info-header"><u>EMAIL:</u></span><br>
-                            abc123@mail.com
-                        </p>
-                    </div>
+                    <p class="contact-info-p">
+                        <span class="contact-info-header"><u>EMAIL:</u></span><br>
+                        abc123@mail.com
+                    </p>
                 </div>
             </div>
         </section>
