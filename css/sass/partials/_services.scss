@@ -1,52 +1,22 @@
-$blue-accent: #1DA1E1;
-@mixin blue-header($width){
-    margin-top: 2em;
-    width: $width;
-    border: 2px solid $blue-accent;
-    border-radius: .15em;
-    color: $blue-accent;
-    letter-spacing: .2em;
-    font-weight: 600;
-    text-align: center;
-}
-@mixin span-settings-blue{
-    content: "";
-    position: absolute;
-      height: 5px;
-      margin-top: .5em;
-      border-bottom: 3px solid $blue-accent;
-      top: 0;
-      width: 1.5em;
-}
-// Header Paragraphs
-@mixin header-p{
-  font-size: .85em;
-  margin-top: 1.5em;
-  margin-bottom: 2em;
-  text-align: center;
-}
-@mixin service-circles{
-	position: static;
-	float: left;
-	margin: .5em .5em 3em .5em;
-	
-	height: 4em;
-	width: 4em;
-}
+
 // Services container
 #our-services{
 	overflow: hidden;
 }
 // Services Header
 #services-header{
-	@include blue-header(11em);
+	@include blue-header(10em);
 }
 //Services Header Span
 #services-header.lined-header span:before,
 #services-header.lined-header span:after {
     @include span-settings-blue;
 }
+#service-container{
+	display: flex;
+	justify-content: space-evenly;
 
+}
 .service-titles{
 	font-size: 1.1em;
 	font-weight: 600;
@@ -61,47 +31,26 @@ $blue-accent: #1DA1E1;
 
 }
 #service-blocks{
-	width: 45em;
-	float: right;
-	margin-top: 5em;
+	width: 600px;
+	margin: 10px 0;
 }
 // iPhone image 
 #iphone-side{
-	float: left;
 	margin-left: 2em;
 }
 #iphone-img{
 	width: 20em;
 }
-// Trends img
-#trends{
-	@include service-circles;
-}
-// Responsive img
-#responsive{
-	@include service-circles;	
-}
-// Customize img
-#ez-customize{
-	@include service-circles;
-}
-// Mulit Layouts img
-#multi-layouts{
-	@include service-circles;
-}
-// Retina img
-#retina{
-	@include service-circles;
-}
-// Online support img
-#support{
-	@include service-circles;
+.service-img{
+		float: left;
+		margin-right: 10px;
+		height: 4em;
+		width: 4em;
 }
 // ------------------ Media Queries -------------------
 // Medium Screen
-@media screen  and (max-width: 63.9375em) {
+@media screen and (max-width: 992px) {
 	#service-blocks{
-		width: 100%;
 		margin: 4em auto 0 auto;
 	}
 	#iphone-img{
@@ -110,10 +59,11 @@ $blue-accent: #1DA1E1;
 }
 
  // Small Screen
-@media screen and (max-width: 39.9375em)  {
-	#service-container{
-		width: 100%;
+ @media screen and (max-width: 768px) {
+	#services-header{
+		@include blue-header(11em);
 	}
+
 	#service-blocks{
 		
 		margin-top: 1em;
@@ -127,5 +77,8 @@ $blue-accent: #1DA1E1;
 		height: 4em;
 
 	}
+
+}
+@media screen and (max-width: 501px) {
 
 }

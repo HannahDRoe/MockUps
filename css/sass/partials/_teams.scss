@@ -1,24 +1,3 @@
-$blue-accent: #1DA1E1;
-$grey-accent: #6d6d6e;
-@mixin blue-header($width){
-    margin-top: 2em;
-    width: $width;
-    border: 2px solid $blue-accent;
-    border-radius: .15em;
-    color: $blue-accent;
-    letter-spacing: .2em;
-    font-weight: 600;
-    text-align: center;
-}
-@mixin span-settings-blue{
-    content: "";
-    position: absolute;
-      height: 5px;
-      margin-top: .5em;
-      border-bottom: 3px solid $blue-accent;
-      top: 0;
-      width: 1.5em;
-}
 
 // Teams container
 #teams{
@@ -80,31 +59,25 @@ $grey-accent: #6d6d6e;
 .team-img-div.slick-slide.slick-active,
 .team-img-div.slick-slide.slick-cloned,
 .team-img-div.slick-slide{
-  padding-top: 4em;
-  outline: none;
+  padding-top: 20px;
   width: 90%;
   
 
 }
 
-div.team-img-div.slick-list{
-  margin-right: 2em!important;
-  margin-left: 2em!important;
-}
-
 .team-img-div  p{
-  margin-top: 1em;
+  margin-top: 20px;
   margin-bottom: 0;
 }
 .team-img-div p:last-child{
-  margin: 0;
+  margin-top: 7px;
 }
 .fellowship{
   position: relative;
   margin: 0 auto;
-  border-radius: 9em;
-  height:18em;
-  width: 18em;
+  border-radius: 150px;
+  height: 250px;
+  width: 250px;
   object-fit: cover;
 
 }
@@ -112,8 +85,8 @@ div.team-img-div.slick-list{
 .team-span:after{
   content: '';
   display: inline-block;  
-  border-bottom: .2em solid lighten($grey-accent, 40%);
-  width: 2.25em;
+  border-bottom: 3px solid lighten($grey-accent, 40%);
+  width: 30px;
   text-align: center;
 } 
 // ------------------ Media Queries -------------------

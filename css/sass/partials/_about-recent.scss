@@ -1,48 +1,3 @@
-// Variables
-$blue-accent: #1DA1E1;
-
-// Blue Header
-@mixin blue-header($width){
-		margin-top: 2em;
-		width: $width;
-		border: 2px solid $blue-accent;
-		border-radius: .15em;
-		color: $blue-accent;
-		letter-spacing: .2em;
-		font-weight: 600;
-		text-align: center;
-}
-// White Header
-@mixin white-header($width){
-		margin-top: 2em;
-		width: $width;
-		border: 2px solid #fff;
-		border-radius: .15em;
-		color: #fff;
-		letter-spacing: .2em;
-		font-weight: 600;
-		text-align: center;
-}
-// Blue span Lines
-@mixin span-settings-blue{
-		content: "";
-		position: absolute;
-	  	height: 5px;
-	  	margin-top: .5em;
-	  	border-bottom: 3px solid $blue-accent;
-	  	top: 0;
-	  	width: 1.5em;
-}
-// White Span Lines
-@mixin span-settings-white{
-		content: "";
-		position: absolute;
-	  	height: 5px;
-	  	margin-top: .5em;
-	  	border-bottom: 3px solid #fff;
-	  	top: 0;
-	  	width: 1.5em;
-}
 
 // About cotainer
 #about{
@@ -63,18 +18,25 @@ $blue-accent: #1DA1E1;
 
 // About container: holds squares
 #about-container{
-	margin-top: 2em;
-	margin-bottom: 2em;
+	margin: 20px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	
 }
+
 .about-squares{
-	border: .15em solid #E1E1E1;
-	margin-bottom: 2em;
+	border: 2px solid #E1E1E1;
+	margin: 0 15px 20px 15px;
+	padding: 20px;
+
 
 }
 // Icons position and size
 .about-img{
-	width: 12em;
-  	height: 12em;
+	width: 200px;
+  	height: 200px;
 	margin-top: 1em;
 }
 // Descriptions
@@ -86,13 +48,51 @@ $blue-accent: #1DA1E1;
 // -------------------------- About Section Media Queries-------------
 
 // Medium Screen
-@media screen  and (max-width: 63.9375em) {
-
-
+@media screen and (max-width: 1020px) {
+	
+	.about-squares{
+		margin: 0 15px 20px 15px;
+		padding: 10px;
+		height: 200px;
+	
+	}
+	// Icons position and size
+	.about-img{
+		width: 100px;
+		height: 100px;
+		margin-top: 1em;
+	}
+	// Descriptions
+	.about-p{
+		font-size: 16px;
+		margin: 10px auto;
+		width: 125px;
+	}
  }
 
 // Small Screen
-@media screen and (max-width: 39.9375em)  {
+@media screen and (max-width: 768px)  {
+	main{
+		padding-top: 12%;
+	}
+	.about-squares{
+		margin: 0 5px 10px 5px;
+		padding: 5px;
+		height: 200px;
+	
+	}
+	// Icons position and size
+	.about-img{
+		width: 100px;
+		height: 100px;
+		margin-top: 1em;
+	}
+	// Descriptions
+	.about-p{
+		font-size: 16px;
+		margin: 10px auto;
+		width: 125px;
+	}
 }
 
 // -------------------------- Recent Projects section --------------
@@ -102,12 +102,11 @@ $blue-accent: #1DA1E1;
 	overflow: hidden;
 	width: 100%;
 	background-color: #5EBDEB;
-	margin-top: 2em;
 	padding: 1em;
 }
 #recent-header{
 	position: relative;
-	@include white-header(13.75em);
+	@include white-header(12.75em);
 }
 
  // Recent header span lines
@@ -120,24 +119,18 @@ $blue-accent: #1DA1E1;
 	display: block;
 	margin-left: auto;
     margin-right: auto;
-    height: 35em;
-    width: 45em;
 }
 
 // -------------------------------- Recent Projects Media Queries-------------
 // Medium Screen
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-	#recent-img{
-		height: 25em;
-    	width: 30em;
-	}
+@media screen and (max-width: 768) {
 }
 
-// Small Screen
-@media screen and (max-width: 39.9375em)  {
-	#recent-img{
-		height: 20em;
-    	width: 25em;
-	}
+// // Small Screen
+// @media screen and (max-width: 768px) {
+// 	#recent-img{
+// 		height: 20em;
+//     	width: 25em;
+// 	}
 
-}
+// }

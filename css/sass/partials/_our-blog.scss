@@ -1,43 +1,4 @@
-// Blue accent for date block
-$blue-accent: #1DA1E1;
 
-// White Span Lines
-@mixin span-settings-white{
-		content: "";
-		position: absolute;
-	  	height: 5px;
-	  	margin-top: .5em;
-	  	border-bottom: 3px solid #fff;
-	  	top: 0;
-	  	width: 1.5em;
-}
-// White Header
-@mixin white-header($width){
-		margin-top: 2em;
-		width: $width;
-		border: 2px solid #fff;
-		border-radius: .15em;
-		color: #fff;
-		letter-spacing: .2em;
-		font-weight: 600;
-		text-align: center;
-}
-// Header Paragraphs
-@mixin header-p{
-	font-size: .85em;
-	margin-top: 1.5em;
-	margin-bottom: 4em;
-	text-align: center;
-}
-// Grey Load more button
-@mixin grey-button {
-    outline: none;
-    border-radius: .25em;
-    font-weight: bold;
-    color: darken(#7B8896, 5%);
-    background-color:darken(#F2F2F2, 8%);
-
-}
 // Blog Div
 #our-blog{
 	padding-top: 1em;
@@ -59,10 +20,15 @@ $blue-accent: #1DA1E1;
 }
 // Blog posts container
 #blog-container{
-	width: 95%;
+	width: 100%;
+}
+.blog-grid{
+	display: flex;
+	justify-content: center;
 }
 .blog-column{
-	margin-bottom: 2em !important;
+	width: 250px;
+	margin: 20px;
 }
 
 // Blog Info div contains title, text, author and comments
@@ -78,6 +44,7 @@ $blue-accent: #1DA1E1;
 }
 // Avatar and comments div
 .avatar-comments{
+	display: flex;
 	width: 100%;
 	font-size: .85em;
 	margin-bottom: 1.2em;
@@ -87,7 +54,6 @@ $blue-accent: #1DA1E1;
 .avatar-icon, .comment-icon{
 	height: 1em;
 	width: 1em;
-	display: inline;
 }
 // Blog author
 .blog-author{
@@ -152,3 +118,24 @@ $blue-accent: #1DA1E1;
   transition:ease-in-out;
 
 }
+@media screen and (max-width: 992px) {
+	.blog-column{
+		width: 300px;
+	}
+	.blog-grid{
+		flex-wrap: wrap;
+	}
+}	
+@media screen and (max-width: 768px) {
+	.blog-column{
+		width: 42%;
+	}
+
+}
+@media screen and (max-width: 501px) {
+	.blog-column{
+		width: 100%;
+		margin: 10px;
+	}
+
+}	

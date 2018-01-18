@@ -1,0 +1,212 @@
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity 0.5s 0.5s ease;
+  opacity: 0;
+}
+
+// Contact Div
+#contact {
+	padding-top: 1em;
+	background-color: #333B48;
+	overflow: hidden;
+	width: 100%;
+}
+#contact-header {
+	@include white-header(9em);
+}
+// Text under header
+#contact-header-p {
+	@include header-p;
+	color: #fff;
+}
+//Contact Header Span
+#contact-header.lined-header span:after,
+#contact-header.lined-header span:before {
+	@include span-settings-white;
+}
+// Contact form  container
+#contact-container {
+	padding-bottom: 2em;
+	border-bottom: 3px solid $contact-grey;	
+	display: flex;	
+	justify-content: center;
+}
+// Contact Form
+#contact-form {
+	width: 100%;
+	margin:  0 30px;
+}
+// Input Divs
+.form-group{
+	position: relative;
+	//Icon Position and appearance	
+	svg {
+		margin-left: 10px;
+		width: 15px;
+		height: auto;
+		fill: $contact-grey;
+		top: 33px;
+		position: relative;
+	}
+}
+
+// Input styles
+.contact-input {
+	background-color: #3E4755;
+	color: $contact-grey;
+	margin: 0;
+	padding-left: 30px;
+	font-size: 0.85em;
+	font-weight: normal;
+	border-color: #56606F;
+}
+// Input focus
+.contact-input:focus {
+	background-color: #3E4755;
+	color: #ddd;
+	[placeholder]:focus::-webkit-input-placeholder {
+	  transition: opacity 0.5s 0.5s ease;
+	  opacity: 0;
+	}
+
+}
+
+
+#pencil{
+	top: 30px;
+}
+#message-textarea {
+	padding-top: 0.5em;
+	height: 9em;
+}
+#send-message {
+	float: right;
+
+}
+#message-icon {
+	
+	color: #fff;
+	padding-left: 90%;
+}
+#google-map {
+	margin: 25px 30px;
+	width: 100%;
+	iframe{
+		height: 300px;
+		width: 100%;
+		}
+}
+// Contact Info at bottom
+#contact-line{
+	height: 20em;
+	// padding-top: 3em;
+	color: $contact-grey;
+	font-size: .85em;
+	margin: 0 auto;
+	max-width: 1000px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+#contact-line-div{
+	height: 100%;
+	width: 100%;
+	margin-left: 5%;
+	margin-right: auto;
+}
+.contact-info{
+	height: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-right: 0.1em solid $contact-grey;
+		 // Contact Logo
+		#contact-logo{
+			
+			justify-content: center;
+			
+		}
+}
+
+// Contact header that's underlined
+.contact-info-header{
+	color:#fff;
+}
+// #contact-logo{
+// 	border-right: 0.1em solid $contact-grey;
+	
+// }
+#contact-logo img{
+
+	width: 4em;
+	background-color:  #333B48 ;
+}
+#logo-p{
+	font-size: 26px;
+}
+
+.contact-circle-div{
+	height: 55px;
+	width: 55px;
+	border-radius: 35px;
+	background-color: $blue-accent;
+	display: flex;
+	justify-content: center;
+	margin-right: 10px;
+	svg{
+		fill: #fff;
+		width: 30px;
+	}
+}
+
+#contact-email{
+	border: none;
+}
+
+// Footer styles
+#footer{
+	height: 3em;
+	padding-top: 1em;
+	background-color: #212832;
+	text-align: center;
+	color: #fff;
+
+	a{
+		color:#FFAB31;
+		}
+
+}
+
+// ------------------ Media Queries -------------------
+// Medium Screen
+@media screen  and (max-width: 992px) {
+	#contact-container{
+		flex-wrap: wrap;
+	}
+	#contact-logo{
+		display: none;
+	}
+
+}
+
+ // xs Small Screen
+@media screen and (max-width:601px)  {
+	#contact-line{
+		flex-direction: column;
+	}
+	.contact-info{
+		justify-content: center;
+		border: none;
+	}
+	.contact-info-p{
+		width: 125px;
+	}
+	#footer{
+		p{
+			font-size: 12px;
+			
+		}
+	}
+}
+

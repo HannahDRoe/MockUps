@@ -1,47 +1,34 @@
-.no-js .top-bar {
-    display: block;
-}
+
 .no-js .title-bar {
     display: none;
 }
-// top bar variables
-$topBtnBG: #333B48;
 
-@mixin button-mixin{
-	margin-top: 1em;
-	margin-right: .2em;
-	outline: none;
-	border-radius: .25em;
-	z-index: 999;
-}
-@mixin active-button{
-	background-color: #5EBDEB;
-
-}
 .sticky{
-    z-index: 10000;
+	z-index: 10000;
+	position: fixed;
+	width: 100%;
 }
 // Top Bar
 .top-bar{
 	height: 6em;
 	padding-right: 5em;
-	background-color: $topBtnBG;
+	background-color: $topNavColor;
 	width: 100%;
 
 }
 // Top bar Link color
 .menu,.title-bar{
-	background-color: $topBtnBG!important;
+	background-color: $topNavColor!important;
 }
 //Top Bar Left
 #logo{
-	height: 2em;
+	display: block;
 	width: 3em;
 	margin: .5em .25em .5em 1em;
 }
 //Top Button stylings to override foundation stylings
 .menu-btn{
-	background-color: $topBtnBG;
+	background-color: $topNavColor;
 	@include button-mixin;
 
 }
@@ -52,53 +39,58 @@ $topBtnBG: #333B48;
 }
 
 // Medium Screen
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-	.title-bar{
-		height: 3em;
+@media screen and (max-width: 992px) {
 
-	}
-	#logo{
-		display: none;
-	}
 
+// 	#logo{
+// 		display: none;
+// 	}
 	.top-bar{
-		width: 20em;
-		height: 0;
+		padding-right: 0px;
 	}
-
-	#top-menu{
-		padding: 0;
-		height: 0;
-
+	#menu-btns-container{
+		display: flex;
+		justify-content: center;
 	}
-	.menu li {
-		display: block !important;
-		width: 20em;
-		float: left;
-	}
-	.medium.button{
-		margin-top: 0;
-		margin-right: 0;
-		padding-top: 1.5em;
-		padding-bottom: 1.5em;
+// 	#top-menu{
+// 		padding: 0;
+// 		height: 0;
+
+// 	}
+// 	.menu li {
+// 		display: block !important;
+// 		width: 20em;
+// 		float: left;
+// 	}
+// 	.medium.button{
+// 		margin-top: 0;
+// 		margin-right: 0;
+// 		padding-top :.5m;
+// 		padding-bottom: .5em;
 
 
-	}
+// 	}
 
-	// button styling
-	.medium.button,
-	.medium.button.active,
-	.button:hover{
-		border-radius: 0;
+// 	// button styling
+// 	.medium.button,
+// 	.medium.button.active,
+// 	.button:hover{
+// 		border-radius: 0;
 
-	}
+// 	}
 }
 
-// Small Screen
-@media screen and (max-width: 39.9375em)  {
+// // Small Screen 
+@media screen and (max-width: 768px)  {
 
 	.title-bar{
-		height: 3em;
+		padding: 10px;
+	}
+	#title{
+		padding-left: 10px;
+	}
+	#content{
+		display: none;
 	}
 	#logo{
 		display: none;
@@ -106,20 +98,22 @@ $topBtnBG: #333B48;
 	#top-menu{
 		padding-right: 2em;
 	}
+	#menu-btns-container{
+		padding: 5px;
+		margin: 0  0 0 -10px;
+	}
 
-	.is-drilldown{
-		background-color: $topBtnBG;
-		margin-left: -1em;
-	}
-	.menu.drilldown{
-		width: 20em;
-	}
-	.medium.button{
-		margin-top: 0;
-		margin-right: 0;
-		padding-top: 2.5em;
-		padding-bottom: 2.5em;
-	}
+	// .is-drilldown{
+	// 	background-color: $topNavColor;
+	// 	margin-left: 0;
+	// }
+
+	// .medium.button{
+	// 	margin-top: 0;
+	// 	margin-right: 0;
+	// 	padding-top: 5em;
+	// 	padding-bottom: 2.5em;
+	// }
 	// button styling
 	.medium.button,
 	.medium.button.active,
