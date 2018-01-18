@@ -114,7 +114,7 @@ body {
 
 div.slick-slide {
   width: 100%;
-  padding-top: 100px;
+  padding-top: 120px;
   text-align: center;
   margin: 0;
   outline: none; }
@@ -147,17 +147,15 @@ div.slick-slide {
 .slick-dots li.slick-active button:before {
   color: #FFFFFF; }
 
-.slides {
-  height: 42em !important;
-  padding: 0; }
-
 #slide1 {
   background: url("../img/top-slides/mount1.jpeg") no-repeat center;
-  background-size: cover;
-  height: 400px; }
+  background-size: cover; }
 
 #slide1-contents {
-  color: #fff; }
+  color: #fff;
+  text-shadow: 0px -4px 10px rgba(46, 46, 46, 0.651); }
+  #slide1-contents p {
+    color: #ddd; }
 
 .slide1-btn {
   background-color: #333B48; }
@@ -256,6 +254,8 @@ button.slide1-btn.medium.button {
     width: 125px; } }
 
 @media screen and (max-width: 768px) {
+  main {
+    padding-top: 12%; }
   .about-squares {
     margin: 0 5px 10px 5px;
     padding: 5px;

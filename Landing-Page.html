@@ -727,7 +727,7 @@
                     </em>
                 </p>
             </div>
-            <div id="contact-container">
+            <div id="contact-container"  >
                 <form id="contact-form" action="index.html" method="post" >
                     <div class="form-group">
                         <label for="name" hidden="hidden">Name</label>
@@ -736,16 +736,14 @@
                                 <path d="M306 325.988c90.564-.005 123.148-90.682 131.68-165.167C448.188 69.06 404.8 0 306 0c-98.78 0-142.194 69.055-131.678 160.82 8.54 74.484 41.114 165.175 131.68 165.168z"/>
                                 <path d="M550.98 541.908c-.99-28.904-4.376-57.94-9.42-86.393-6.11-34.47-13.89-85.002-43.983-107.465-17.404-12.988-39.94-17.25-59.865-25.08-9.697-3.81-18.384-7.595-26.537-11.902-27.518 30.176-63.4 45.962-105.186 45.964-41.775 0-77.653-15.786-105.168-45.964-8.153 4.308-16.84 8.093-26.537 11.9-19.924 7.833-42.46 12.093-59.863 25.082-30.096 22.463-37.873 72.996-43.983 107.465-5.046 28.454-8.434 57.49-9.423 86.393-.766 22.387 10.288 25.525 29.017 32.284 23.453 8.458 47.666 14.737 72.04 19.884 47.078 9.94 95.604 17.582 143.922 17.924 48.318-.343 96.844-7.983 143.92-17.924 24.376-5.145 48.59-11.424 72.042-19.884 18.736-6.757 29.79-9.895 29.023-32.284z"/>
                             </svg>
-                       
-                        <input class="contact-input" id="name-input" type="text"  name="name" value="" placeholder="Name">
-
+                        <input class="contact-input" id="name-input" type="text"  name="name" value="" placeholder="Name" required>
                     </div>
                     <div class="form-group">
                         <label for="email" hidden="hidden">Email</label>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
                             <path d="M7 9L5.268 7.484.316 11.73c.18.166.423.27.69.27h11.987c.267 0 .51-.104.688-.27L8.733 7.483 7 9z"/>
                             <path d="M13.684 2.27c-.18-.167-.422-.27-.69-.27H1.006c-.267 0-.51.104-.69.273L7 8l6.684-5.73zM0 2.878v8.308L4.833 7.08M9.167 7.08L14 11.185v-8.31"/></svg>
-                        <input class="contact-input" id="email-input" type="text" name="email" value="" placeholder="Email">
+                        <input class="contact-input" id="email-input" type="text" name="email" value="" placeholder="Email" required pattern="email">
                     </div>
                     <div class="form-group">
                         <label for="message" hidden="hidden">Message</label>
@@ -756,7 +754,7 @@
                     </div>
                     <div class="form-group">
                         <span id="message-icon" class="input-group-addon"><span class="fa fa-external-link fa-fw"></span></span>
-                        <button class="button" id="send-message" type="button" name="button">SEND MESSAGE</button>
+                        <button class="button" id="send-message" type="submit" value=""  > SEND MESSAGE</button>
                     </div>
 
                 </form>

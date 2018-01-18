@@ -9,7 +9,7 @@
 
 div.slick-slide{
 	width: 100%;
-	padding-top: 100px;
+	padding-top: 120px;
 	text-align: center;
 	margin: 0;
 	outline: none;
@@ -49,18 +49,22 @@ div.slick-slide{
 .slick-dots li.slick-active button:before{
 	color: #FFFFFF;
 }
-// Slide size
-.slides{
-	height: 42em !important;
-	padding: 0;
-}
+// // Slide size
+// .slides{
+// 	height: 42em !important;
+// 	padding: 0;
+// }
 #slide1{
 	background: url('../img/top-slides/mount1.jpeg')no-repeat center;
 	background-size: cover;
-	height: 400px;
+	// height: 400px;
 }
 #slide1-contents{
 	color: #fff;
+	text-shadow: 0px -4px 10px rgba(46, 46, 46, 0.651);
+	p{
+		color: #ddd;
+	}
 }
 
 .slide1-btn{
